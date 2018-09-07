@@ -14,4 +14,7 @@ pod 'AFNetworking'
   pod 'Mantle'
   pod 'FMDB', '~> 2.7.2'
   pod 'MJExtension','~>3.0.11'
+  pod 'SVProgressHUD'
+  
+  
 end

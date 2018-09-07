@@ -27,6 +27,7 @@ PODS:
   - SDWebImage (4.4.2):
     - SDWebImage/Core (= 4.4.2)
   - SDWebImage/Core (4.4.2)
+  - SVProgressHUD (2.2.5)
   - YYKit (1.0.9):
     - YYKit/no-arc (= 1.0.9)
   - YYKit/no-arc (1.0.9)
@@ -40,6 +41,7 @@ DEPENDENCIES:
   - MJExtension (~> 3.0.11)
   - MJRefresh
   - SDWebImage
+  - SVProgressHUD
   - YYKit
 
 SPEC REPOS:
@@ -52,6 +54,7 @@ SPEC REPOS:
     - MJExtension
     - MJRefresh
     - SDWebImage
+    - SVProgressHUD
     - YYKit
 
 SPEC CHECKSUMS:
@@ -63,8 +66,9 @@ SPEC CHECKSUMS:
   MJExtension: 19bc33ce2eee2d319760f5622562cf581a6ff756
   MJRefresh: 0efa19656679d70a0f47cbe76e56c2271fe53a97
   SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: da7e171e4d1ed36322ca03d6f4ac7ac856382447
+PODFILE CHECKSUM: fa5458126496aef1bda1ed5cfba697dc873bd357
 
 COCOAPODS: 1.5.3

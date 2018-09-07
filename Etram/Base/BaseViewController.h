@@ -17,6 +17,7 @@ typedef void(^refreshListBlock)();
 typedef void(^scrollToTopBlcok)();
 
 @interface BaseViewController : UIViewController
+
 @property (nonatomic, strong) LoginComplited loginComplitedBlock;
 - (void)adjustNavigationUI:(UINavigationController *) nav;
 - (void)doLogin;
@@ -51,7 +52,6 @@ typedef void(^scrollToTopBlcok)();
 
 //重新设置app数据
 - (void)reloginApp;
-
 
 @property(nonatomic,strong)UIButton *backBtn;
 -(void)setTextFieldLeftView:(UITextField *)textField :(NSString *)imgStr :(NSInteger)width;

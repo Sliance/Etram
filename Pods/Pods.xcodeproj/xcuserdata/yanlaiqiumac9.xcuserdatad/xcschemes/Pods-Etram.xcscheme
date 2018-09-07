@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "47A3A8C4B2239522D3DDD83BB0B357DF"
+               BlueprintIdentifier = "72E07C813DCA430D4DDD51F5DD6582EC"
                BlueprintName = "Pods-Etram"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "libPods-Etram.a">

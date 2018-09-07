@@ -59,9 +59,29 @@
 		883453B7213FE9B4002AAC62 /* BaseCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 88345384213FE9B4002AAC62 /* BaseCollectionViewCell.m */; };
 		883453B8213FE9B4002AAC62 /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 88345386213FE9B4002AAC62 /* BaseTableViewCell.m */; };
 		883453B9213FE9B4002AAC62 /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 88345388213FE9B4002AAC62 /* BaseView.m */; };
-		883453BA213FE9B4002AAC62 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8834538A213FE9B4002AAC62 /* BaseViewController.m */; };
 		883453BB213FE9B4002AAC62 /* PsfTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8834538C213FE9B4002AAC62 /* PsfTabBarItem.m */; };
 		883453C1213FEA14002AAC62 /* HomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 883453C0213FEA14002AAC62 /* HomeController.m */; };
+		884E4ECD2140BC46007448CF /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 884E4ECC2140BC46007448CF /* BaseViewController.m */; };
+		884E4ED22140F75C007448CF /* MineController.m in Sources */ = {isa = PBXBuildFile; fileRef = 884E4ED12140F75C007448CF /* MineController.m */; };
+		884E4ED62140F8D8007448CF /* MineHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 884E4ED52140F8D8007448CF /* MineHeadView.m */; };
+		884E4EDB21410528007448CF /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 884E4ED921410528007448CF /* MessageViewController.m */; };
+		884E4EDF21410599007448CF /* DetailMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 884E4EDE21410599007448CF /* DetailMessageCell.m */; };
+		884E4EE321410A85007448CF /* ScanQrCodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 884E4EE221410A85007448CF /* ScanQrCodeController.m */; };
+		884E4EE621410CCA007448CF /* LockPaytypeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 884E4EE521410CCA007448CF /* LockPaytypeController.m */; };
+		884E4EF021411245007448CF /* MineWalletViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 884E4EE921411245007448CF /* MineWalletViewController.m */; };
+		884E4EF121411245007448CF /* MyIntegralController.m in Sources */ = {isa = PBXBuildFile; fileRef = 884E4EEB21411245007448CF /* MyIntegralController.m */; };
+		884E4EF221411245007448CF /* RechargeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 884E4EED21411245007448CF /* RechargeViewController.m */; };
+		884E4EF321411245007448CF /* TradingDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 884E4EEF21411245007448CF /* TradingDetailController.m */; };
+		884E4EFF21411292007448CF /* MineWalletCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 884E4EF621411292007448CF /* MineWalletCell.m */; };
+		884E4F0021411292007448CF /* PayTypeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 884E4EF821411292007448CF /* PayTypeView.m */; };
+		884E4F0121411292007448CF /* RechargeBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 884E4EFA21411292007448CF /* RechargeBtn.m */; };
+		884E4F0221411292007448CF /* RechargeHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 884E4EFC21411292007448CF /* RechargeHeadView.m */; };
+		884E4F0321411292007448CF /* TradingDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 884E4EFE21411292007448CF /* TradingDetailCell.m */; };
+		884E4F0721412518007448CF /* MineInformationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 884E4F0521412518007448CF /* MineInformationController.m */; };
+		884E4F0B21412551007448CF /* HeadimageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 884E4F0921412551007448CF /* HeadimageTableViewCell.m */; };
+		884E4F0E21412C9B007448CF /* SettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 884E4F0D21412C9B007448CF /* SettingController.m */; };
+		884E4F1121412F38007448CF /* MineTripController.m in Sources */ = {isa = PBXBuildFile; fileRef = 884E4F1021412F38007448CF /* MineTripController.m */; };
+		884E4F1421413A19007448CF /* TripHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 884E4F1321413A19007448CF /* TripHeadView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -190,12 +210,52 @@
 		88345386213FE9B4002AAC62 /* BaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewCell.m; sourceTree = "<group>"; };
 		88345387213FE9B4002AAC62 /* BaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseView.h; sourceTree = "<group>"; };
 		88345388213FE9B4002AAC62 /* BaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseView.m; sourceTree = "<group>"; };
-		88345389213FE9B4002AAC62 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
-		8834538A213FE9B4002AAC62 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		8834538B213FE9B4002AAC62 /* PsfTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PsfTabBarItem.h; sourceTree = "<group>"; };
 		8834538C213FE9B4002AAC62 /* PsfTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PsfTabBarItem.m; sourceTree = "<group>"; };
 		883453BF213FEA14002AAC62 /* HomeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeController.h; sourceTree = "<group>"; };
 		883453C0213FEA14002AAC62 /* HomeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeController.m; sourceTree = "<group>"; };
+		884E4ECB2140BC46007448CF /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		884E4ECC2140BC46007448CF /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		884E4ED02140F75C007448CF /* MineController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineController.h; sourceTree = "<group>"; };
+		884E4ED12140F75C007448CF /* MineController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineController.m; sourceTree = "<group>"; };
+		884E4ED52140F8D8007448CF /* MineHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineHeadView.m; sourceTree = "<group>"; };
+		884E4ED72140F8E8007448CF /* MineHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineHeadView.h; sourceTree = "<group>"; };
+		884E4ED921410528007448CF /* MessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageViewController.m; sourceTree = "<group>"; };
+		884E4EDA21410528007448CF /* MessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageViewController.h; sourceTree = "<group>"; };
+		884E4EDD21410599007448CF /* DetailMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailMessageCell.h; sourceTree = "<group>"; };
+		884E4EDE21410599007448CF /* DetailMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailMessageCell.m; sourceTree = "<group>"; };
+		884E4EE121410A85007448CF /* ScanQrCodeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanQrCodeController.h; sourceTree = "<group>"; };
+		884E4EE221410A85007448CF /* ScanQrCodeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanQrCodeController.m; sourceTree = "<group>"; };
+		884E4EE421410CCA007448CF /* LockPaytypeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LockPaytypeController.h; sourceTree = "<group>"; };
+		884E4EE521410CCA007448CF /* LockPaytypeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LockPaytypeController.m; sourceTree = "<group>"; };
+		884E4EE821411245007448CF /* MineWalletViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineWalletViewController.h; sourceTree = "<group>"; };
+		884E4EE921411245007448CF /* MineWalletViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineWalletViewController.m; sourceTree = "<group>"; };
+		884E4EEA21411245007448CF /* MyIntegralController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyIntegralController.h; sourceTree = "<group>"; };
+		884E4EEB21411245007448CF /* MyIntegralController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyIntegralController.m; sourceTree = "<group>"; };
+		884E4EEC21411245007448CF /* RechargeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RechargeViewController.h; sourceTree = "<group>"; };
+		884E4EED21411245007448CF /* RechargeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RechargeViewController.m; sourceTree = "<group>"; };
+		884E4EEE21411245007448CF /* TradingDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TradingDetailController.h; sourceTree = "<group>"; };
+		884E4EEF21411245007448CF /* TradingDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TradingDetailController.m; sourceTree = "<group>"; };
+		884E4EF521411292007448CF /* MineWalletCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineWalletCell.h; sourceTree = "<group>"; };
+		884E4EF621411292007448CF /* MineWalletCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineWalletCell.m; sourceTree = "<group>"; };
+		884E4EF721411292007448CF /* PayTypeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayTypeView.h; sourceTree = "<group>"; };
+		884E4EF821411292007448CF /* PayTypeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PayTypeView.m; sourceTree = "<group>"; };
+		884E4EF921411292007448CF /* RechargeBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RechargeBtn.h; sourceTree = "<group>"; };
+		884E4EFA21411292007448CF /* RechargeBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RechargeBtn.m; sourceTree = "<group>"; };
+		884E4EFB21411292007448CF /* RechargeHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RechargeHeadView.h; sourceTree = "<group>"; };
+		884E4EFC21411292007448CF /* RechargeHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RechargeHeadView.m; sourceTree = "<group>"; };
+		884E4EFD21411292007448CF /* TradingDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TradingDetailCell.h; sourceTree = "<group>"; };
+		884E4EFE21411292007448CF /* TradingDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TradingDetailCell.m; sourceTree = "<group>"; };
+		884E4F0521412518007448CF /* MineInformationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineInformationController.m; sourceTree = "<group>"; };
+		884E4F0621412518007448CF /* MineInformationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineInformationController.h; sourceTree = "<group>"; };
+		884E4F0921412551007448CF /* HeadimageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeadimageTableViewCell.m; sourceTree = "<group>"; };
+		884E4F0A21412551007448CF /* HeadimageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeadimageTableViewCell.h; sourceTree = "<group>"; };
+		884E4F0C21412C9B007448CF /* SettingController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingController.h; sourceTree = "<group>"; };
+		884E4F0D21412C9B007448CF /* SettingController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingController.m; sourceTree = "<group>"; };
+		884E4F0F21412F38007448CF /* MineTripController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineTripController.h; sourceTree = "<group>"; };
+		884E4F1021412F38007448CF /* MineTripController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineTripController.m; sourceTree = "<group>"; };
+		884E4F1221413A19007448CF /* TripHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TripHeadView.h; sourceTree = "<group>"; };
+		884E4F1321413A19007448CF /* TripHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TripHeadView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -269,6 +329,7 @@
 				88345323213FE9B2002AAC62 /* Category */,
 				8834534C213FE9B3002AAC62 /* Network */,
 				883453BD213FE9C8002AAC62 /* Home */,
+				884E4ECE2140F3EE007448CF /* Mine */,
 				883452FE213FCBE2002AAC62 /* Info.plist */,
 				883452FF213FCBE2002AAC62 /* main.m */,
 			);
@@ -486,10 +547,10 @@
 				88345386213FE9B4002AAC62 /* BaseTableViewCell.m */,
 				88345387213FE9B4002AAC62 /* BaseView.h */,
 				88345388213FE9B4002AAC62 /* BaseView.m */,
-				88345389213FE9B4002AAC62 /* BaseViewController.h */,
-				8834538A213FE9B4002AAC62 /* BaseViewController.m */,
 				8834538B213FE9B4002AAC62 /* PsfTabBarItem.h */,
 				8834538C213FE9B4002AAC62 /* PsfTabBarItem.m */,
+				884E4ECB2140BC46007448CF /* BaseViewController.h */,
+				884E4ECC2140BC46007448CF /* BaseViewController.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -505,10 +566,129 @@
 		883453BE213FE9E0002AAC62 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				884E4EE021410A85007448CF /* QrCode */,
 				883453BF213FEA14002AAC62 /* HomeController.h */,
 				883453C0213FEA14002AAC62 /* HomeController.m */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		884E4ECE2140F3EE007448CF /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				884E4ED32140F8A4007448CF /* View */,
+				884E4ECF2140F731007448CF /* Controller */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		884E4ECF2140F731007448CF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				884E4F0421412502007448CF /* Setting */,
+				884E4EE721411245007448CF /* wallet */,
+				884E4ED821410510007448CF /* Message */,
+				884E4ED02140F75C007448CF /* MineController.h */,
+				884E4ED12140F75C007448CF /* MineController.m */,
+				884E4F0F21412F38007448CF /* MineTripController.h */,
+				884E4F1021412F38007448CF /* MineTripController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		884E4ED32140F8A4007448CF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				884E4F082141253D007448CF /* Setting */,
+				884E4EF421411292007448CF /* MineWallet */,
+				884E4EDC2141056D007448CF /* message */,
+				884E4ED72140F8E8007448CF /* MineHeadView.h */,
+				884E4ED52140F8D8007448CF /* MineHeadView.m */,
+				884E4F1221413A19007448CF /* TripHeadView.h */,
+				884E4F1321413A19007448CF /* TripHeadView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		884E4ED821410510007448CF /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				884E4EDA21410528007448CF /* MessageViewController.h */,
+				884E4ED921410528007448CF /* MessageViewController.m */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		884E4EDC2141056D007448CF /* message */ = {
+			isa = PBXGroup;
+			children = (
+				884E4EDD21410599007448CF /* DetailMessageCell.h */,
+				884E4EDE21410599007448CF /* DetailMessageCell.m */,
+			);
+			path = message;
+			sourceTree = "<group>";
+		};
+		884E4EE021410A85007448CF /* QrCode */ = {
+			isa = PBXGroup;
+			children = (
+				884E4EE121410A85007448CF /* ScanQrCodeController.h */,
+				884E4EE221410A85007448CF /* ScanQrCodeController.m */,
+				884E4EE421410CCA007448CF /* LockPaytypeController.h */,
+				884E4EE521410CCA007448CF /* LockPaytypeController.m */,
+			);
+			path = QrCode;
+			sourceTree = "<group>";
+		};
+		884E4EE721411245007448CF /* wallet */ = {
+			isa = PBXGroup;
+			children = (
+				884E4EE821411245007448CF /* MineWalletViewController.h */,
+				884E4EE921411245007448CF /* MineWalletViewController.m */,
+				884E4EEA21411245007448CF /* MyIntegralController.h */,
+				884E4EEB21411245007448CF /* MyIntegralController.m */,
+				884E4EEC21411245007448CF /* RechargeViewController.h */,
+				884E4EED21411245007448CF /* RechargeViewController.m */,
+				884E4EEE21411245007448CF /* TradingDetailController.h */,
+				884E4EEF21411245007448CF /* TradingDetailController.m */,
+			);
+			path = wallet;
+			sourceTree = "<group>";
+		};
+		884E4EF421411292007448CF /* MineWallet */ = {
+			isa = PBXGroup;
+			children = (
+				884E4EF521411292007448CF /* MineWalletCell.h */,
+				884E4EF621411292007448CF /* MineWalletCell.m */,
+				884E4EF721411292007448CF /* PayTypeView.h */,
+				884E4EF821411292007448CF /* PayTypeView.m */,
+				884E4EF921411292007448CF /* RechargeBtn.h */,
+				884E4EFA21411292007448CF /* RechargeBtn.m */,
+				884E4EFB21411292007448CF /* RechargeHeadView.h */,
+				884E4EFC21411292007448CF /* RechargeHeadView.m */,
+				884E4EFD21411292007448CF /* TradingDetailCell.h */,
+				884E4EFE21411292007448CF /* TradingDetailCell.m */,
+			);
+			path = MineWallet;
+			sourceTree = "<group>";
+		};
+		884E4F0421412502007448CF /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				884E4F0621412518007448CF /* MineInformationController.h */,
+				884E4F0521412518007448CF /* MineInformationController.m */,
+				884E4F0C21412C9B007448CF /* SettingController.h */,
+				884E4F0D21412C9B007448CF /* SettingController.m */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		884E4F082141253D007448CF /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				884E4F0A21412551007448CF /* HeadimageTableViewCell.h */,
+				884E4F0921412551007448CF /* HeadimageTableViewCell.m */,
+			);
+			path = Setting;
 			sourceTree = "<group>";
 		};
 		9A5552EFC4C11CDD1EA47D44 /* Pods */ = {
@@ -674,10 +854,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Etram/Pods-Etram-resources.sh",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -693,29 +875,40 @@
 			files = (
 				883453B8213FE9B4002AAC62 /* BaseTableViewCell.m in Sources */,
 				883453A4213FE9B4002AAC62 /* BaseApi.m in Sources */,
+				884E4EDB21410528007448CF /* MessageViewController.m in Sources */,
 				883453A9213FE9B4002AAC62 /* UserBaseInfoModel.m in Sources */,
 				8834538F213FE9B4002AAC62 /* CreatQRCodeAndBarCodeFromLeon.m in Sources */,
+				884E4EF221411245007448CF /* RechargeViewController.m in Sources */,
 				883453B3213FE9B4002AAC62 /* ImageUtils.m in Sources */,
 				883453A8213FE9B4002AAC62 /* NSString+CLTools.m in Sources */,
 				883453AE213FE9B4002AAC62 /* ZSSignatureGenerator.m in Sources */,
+				884E4EE621410CCA007448CF /* LockPaytypeController.m in Sources */,
+				884E4F0321411292007448CF /* TradingDetailCell.m in Sources */,
+				884E4EE321410A85007448CF /* ScanQrCodeController.m in Sources */,
+				884E4F0021411292007448CF /* PayTypeView.m in Sources */,
 				88345392213FE9B4002AAC62 /* NSString+MD5Addition.m in Sources */,
 				88345399213FE9B4002AAC62 /* UIImage+RoundedCorner.m in Sources */,
 				883453B2213FE9B4002AAC62 /* FilePathManager.m in Sources */,
 				88345394213FE9B4002AAC62 /* UDIDWrapper.m in Sources */,
-				883453BA213FE9B4002AAC62 /* BaseViewController.m in Sources */,
 				8834539C213FE9B4002AAC62 /* UIView+CTExtensions.m in Sources */,
 				883453A7213FE9B4002AAC62 /* NSString+Cache.m in Sources */,
 				883452F5213FCBE1002AAC62 /* ViewController.m in Sources */,
 				88345396213FE9B4002AAC62 /* AgentImageBaseModel.m in Sources */,
 				883453A5213FE9B4002AAC62 /* CLImageModel.m in Sources */,
+				884E4EDF21410599007448CF /* DetailMessageCell.m in Sources */,
+				884E4F0B21412551007448CF /* HeadimageTableViewCell.m in Sources */,
 				88345395213FE9B4002AAC62 /* UIDevice+IdentifierAddition.m in Sources */,
+				884E4F0121411292007448CF /* RechargeBtn.m in Sources */,
 				88345390213FE9B4002AAC62 /* NSDate+Add.m in Sources */,
+				884E4ED22140F75C007448CF /* MineController.m in Sources */,
 				883453A6213FE9B4002AAC62 /* CLNetworkingManager.m in Sources */,
+				884E4EFF21411292007448CF /* MineWalletCell.m in Sources */,
 				883453A2213FE9B4002AAC62 /* NSDictionary+TYAFNetworking.m in Sources */,
 				883453B6213FE9B4002AAC62 /* UserCurrentLocationManager.m in Sources */,
 				883453AD213FE9B4002AAC62 /* ZSRequestGenerator.m in Sources */,
 				883453AB213FE9B4002AAC62 /* ZSAPIProxy.m in Sources */,
 				88345391213FE9B4002AAC62 /* NSObject+AddKeyValueToObject.m in Sources */,
+				884E4ED62140F8D8007448CF /* MineHeadView.m in Sources */,
 				883453A0213FE9B4002AAC62 /* FunctionMethodsUtil.m in Sources */,
 				883453B9213FE9B4002AAC62 /* BaseView.m in Sources */,
 				88345397213FE9B4002AAC62 /* UIImage+Alpha.m in Sources */,
@@ -726,20 +919,29 @@
 				8834539A213FE9B4002AAC62 /* UIImage+RTStyle.m in Sources */,
 				883453A1213FE9B4002AAC62 /* NSArray+TYAFNetworking.m in Sources */,
 				883453B5213FE9B4002AAC62 /* NSString+MoneyStyle.m in Sources */,
+				884E4F0E21412C9B007448CF /* SettingController.m in Sources */,
 				8834539F213FE9B4002AAC62 /* UIViewController+Loading.m in Sources */,
 				883453AF213FE9B4002AAC62 /* ZSURLResponse.m in Sources */,
 				883453C1213FEA14002AAC62 /* HomeController.m in Sources */,
 				883453B0213FE9B4002AAC62 /* DeviceModel.m in Sources */,
 				883452F2213FCBE1002AAC62 /* AppDelegate.m in Sources */,
+				884E4EF321411245007448CF /* TradingDetailController.m in Sources */,
 				883453B4213FE9B4002AAC62 /* NSString+Hash.m in Sources */,
 				883453B7213FE9B4002AAC62 /* BaseCollectionViewCell.m in Sources */,
+				884E4EF121411245007448CF /* MyIntegralController.m in Sources */,
+				884E4F1421413A19007448CF /* TripHeadView.m in Sources */,
 				883453A3213FE9B4002AAC62 /* NSURLRequest+TYAFNetworking.m in Sources */,
+				884E4F0721412518007448CF /* MineInformationController.m in Sources */,
 				8834539E213FE9B4002AAC62 /* UserDefaultCashe.m in Sources */,
+				884E4F0221411292007448CF /* RechargeHeadView.m in Sources */,
 				883453AC213FE9B4002AAC62 /* ZSRequestCenter.m in Sources */,
 				88345393213FE9B4002AAC62 /* NSString+RTStyle.m in Sources */,
 				8834539D213FE9B4002AAC62 /* UIViewController+Loading.m in Sources */,
 				883453BB213FE9B4002AAC62 /* PsfTabBarItem.m in Sources */,
+				884E4ECD2140BC46007448CF /* BaseViewController.m in Sources */,
+				884E4EF021411245007448CF /* MineWalletViewController.m in Sources */,
 				883453B1213FE9B4002AAC62 /* DSBaseModel.m in Sources */,
+				884E4F1121412F38007448CF /* MineTripController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

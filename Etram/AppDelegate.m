@@ -20,7 +20,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     HomeController *homeVC  = [[HomeController alloc] init];
     UINavigationController *homeNav = [[UINavigationController alloc]initWithRootViewController:homeVC];
-    self.window.rootViewController = homeVC;
+    self.window.rootViewController = homeNav;
     [self.window makeKeyAndVisible];
     return YES;
 }

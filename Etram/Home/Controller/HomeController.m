@@ -11,6 +11,8 @@
 #import <CoreLocation/CoreLocation.h>
 #import <objc/runtime.h>
 #define DEFAULTSPAN 50
+#import "MineController.h"
+#import "LockPaytypeController.h"
 
 @interface HomeController (){
     BOOL haveGetUserLocation;//是否获取到用户位置
@@ -22,16 +24,80 @@
     CLLocationManager *_locationManager;
 }
 @property (strong, nonatomic) MKMapView *mapView;
+@property (strong, nonatomic) UIButton *arrowBtn;
+@property (strong, nonatomic) UIButton *positionBtn;
+@property (strong, nonatomic) UIButton *dateBtn;
+@property (strong, nonatomic) UIButton *mineBtn;
+@property (strong, nonatomic) UIButton *codeBtn;
 @end
 
 @implementation HomeController
 -(MKMapView *)mapView{
     if (!_mapView) {
         _mapView = [[MKMapView alloc]init];
-        _mapView.frame = CGRectMake(0, [self navHeightWithHeight], SCREENWIDTH, SCREENHEIGHT-[self navHeightWithHeight]);
+        _mapView.frame = CGRectMake(0, 0, SCREENWIDTH, SCREENHEIGHT);
         _mapView.delegate = self;
     }
     return _mapView;
+}
+-(UIButton *)mineBtn{
+    if (!_mineBtn) {
+        _mineBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        [_mineBtn.layer setMasksToBounds:YES];
+        [_mineBtn.layer setCornerRadius:22];
+        [_mineBtn setImage:[UIImage imageNamed:@"mine_icon"] forState:UIControlStateNormal];
+        [_mineBtn addTarget:self action:@selector(pressmineBtn) forControlEvents:UIControlEventTouchUpInside];
+        _mineBtn.backgroundColor = [UIColor whiteColor];
+    }
+    return _mineBtn;
+}
+-(UIButton *)dateBtn{
+    if (!_dateBtn) {
+        _dateBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        [_dateBtn.layer setMasksToBounds:YES];
+        [_dateBtn.layer setCornerRadius:22];
+        [_dateBtn setImage:[UIImage imageNamed:@"history_normal"] forState:UIControlStateNormal];
+        [_dateBtn setImage:[UIImage imageNamed:@"history_icon"] forState:UIControlStateSelected];
+        [_dateBtn addTarget:self action:@selector(pressDateBtn) forControlEvents:UIControlEventTouchUpInside];
+        _dateBtn.backgroundColor = [UIColor whiteColor];
+    }
+    return _dateBtn;
+}
+-(UIButton *)positionBtn{
+    if (!_positionBtn) {
+        _positionBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        [_positionBtn.layer setMasksToBounds:YES];
+        [_positionBtn.layer setCornerRadius:22];
+        [_positionBtn setImage:[UIImage imageNamed:@"position_home"] forState:UIControlStateNormal];
+        _positionBtn.backgroundColor = [UIColor whiteColor];
+    }
+    return _positionBtn;
+}
+-(UIButton *)arrowBtn{
+    if (!_arrowBtn) {
+        _arrowBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        [_arrowBtn.layer setMasksToBounds:YES];
+        [_arrowBtn.layer setCornerRadius:22];
+        [_arrowBtn setImage:[UIImage imageNamed:@"arrow_home"] forState:UIControlStateNormal];
+        [_arrowBtn addTarget:self action:@selector(pressArrowBtn) forControlEvents:UIControlEventTouchUpInside];
+        _arrowBtn.backgroundColor = [UIColor whiteColor];
+    }
+    return _arrowBtn;
+}
+-(UIButton *)codeBtn{
+    if (!_codeBtn) {
+        _codeBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        [_codeBtn.layer setMasksToBounds:YES];
+        [_codeBtn.layer setCornerRadius:22];
+        [_codeBtn setImage:[UIImage imageNamed:@"sweep_home"] forState:UIControlStateNormal];
+        [_codeBtn setTitle:@"扫码用车" forState:UIControlStateNormal];
+        _codeBtn.titleLabel.font = [UIFont systemFontOfSize:18];
+        [_codeBtn setTitleColor:DSColorFromHex(0x323232) forState:UIControlStateNormal];
+        _codeBtn.imageEdgeInsets = UIEdgeInsetsMake(0, -20, 0, 0);
+        [_codeBtn addTarget:self action:@selector(pressCodeBtn) forControlEvents:UIControlEventTouchUpInside];
+        _codeBtn.backgroundColor = [UIColor whiteColor];
+    }
+    return _codeBtn;
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -74,6 +140,40 @@
     self.edgesForExtendedLayout = UIRectEdgeNone;
     self.automaticallyAdjustsScrollViewInsets = NO;
     self.navigationController.toolbarHidden = NO;
+    [self reloadUI];
+}
+
+-(void)reloadUI{
+    [self.view addSubview:self.mineBtn];
+    [self.view addSubview:self.arrowBtn];
+    [self.view addSubview:self.positionBtn];
+    [self.view addSubview:self.dateBtn];
+    [self.view addSubview:self.codeBtn];
+    [self.mineBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.width.height.mas_equalTo(44);
+        make.right.bottom.equalTo(self.view).offset(-21);
+    }];
+    [self.positionBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.width.height.mas_equalTo(44);
+        make.bottom.equalTo(self.view).offset(-21);
+        make.left.equalTo(self.view).offset(21);
+    }];
+    [self.dateBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.width.height.mas_equalTo(44);
+        make.bottom.equalTo(self.mineBtn.mas_top).offset(-21);
+        make.right.equalTo(self.view).offset(-21);
+    }];
+    [self.arrowBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.width.height.mas_equalTo(44);
+        make.bottom.equalTo(self.positionBtn.mas_top).offset(-21);
+        make.left.equalTo(self.view).offset(21);
+    }];
+    [self.codeBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.height.mas_equalTo(44);
+        make.width.mas_equalTo(180);
+        make.bottom.equalTo(self.view).offset(-50);
+        make.centerX.equalTo(self.view);
+    }];
 }
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil{
     if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
@@ -344,6 +444,22 @@
         default:
             break;
     }
+    
+}
+#pragma mark----Action
+-(void)pressmineBtn{
+    MineController *mineVC = [[MineController alloc]init];
+    [self.navigationController pushViewController:mineVC animated:YES];
+    
+}
+-(void)pressCodeBtn{
+    LockPaytypeController *lockVC = [[LockPaytypeController alloc]init];
+    [self.navigationController pushViewController:lockVC animated:YES];
+}
+-(void)pressDateBtn{
+    
+}
+-(void)pressArrowBtn{
     
 }
 - (void)didReceiveMemoryWarning {
