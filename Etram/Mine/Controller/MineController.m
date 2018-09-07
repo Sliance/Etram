@@ -13,6 +13,8 @@
 #import "MineInformationController.h"
 #import "MineTripController.h"
 #import "SettingController.h"
+#import "InviteFriendsController.h"
+#import "MyCouponController.h"
 
 @interface MineController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,strong)UITableView *tableview;
@@ -128,12 +130,14 @@
             break;
         case 3:
         {
-            
+            MyCouponController *couponVC = [[MyCouponController alloc]init];
+            [self.navigationController pushViewController:couponVC animated:YES];
         }
             break;
         case 4:
         {
-            
+            InviteFriendsController *inviteVC = [[InviteFriendsController alloc]init];
+            [self.navigationController pushViewController:inviteVC animated:YES];
         }
             break;
         case 5:

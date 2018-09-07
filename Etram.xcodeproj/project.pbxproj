@@ -82,6 +82,9 @@
 		884E4F0E21412C9B007448CF /* SettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 884E4F0D21412C9B007448CF /* SettingController.m */; };
 		884E4F1121412F38007448CF /* MineTripController.m in Sources */ = {isa = PBXBuildFile; fileRef = 884E4F1021412F38007448CF /* MineTripController.m */; };
 		884E4F1421413A19007448CF /* TripHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 884E4F1321413A19007448CF /* TripHeadView.m */; };
+		8864678221420A0600418223 /* InviteFriendsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8864678121420A0600418223 /* InviteFriendsController.m */; };
+		8864678521420BCA00418223 /* MyCouponController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8864678421420BCA00418223 /* MyCouponController.m */; };
+		88646788214214B200418223 /* CouponCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 88646787214214B200418223 /* CouponCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -256,6 +259,12 @@
 		884E4F1021412F38007448CF /* MineTripController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineTripController.m; sourceTree = "<group>"; };
 		884E4F1221413A19007448CF /* TripHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TripHeadView.h; sourceTree = "<group>"; };
 		884E4F1321413A19007448CF /* TripHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TripHeadView.m; sourceTree = "<group>"; };
+		8864678021420A0600418223 /* InviteFriendsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InviteFriendsController.h; sourceTree = "<group>"; };
+		8864678121420A0600418223 /* InviteFriendsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InviteFriendsController.m; sourceTree = "<group>"; };
+		8864678321420BCA00418223 /* MyCouponController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCouponController.h; sourceTree = "<group>"; };
+		8864678421420BCA00418223 /* MyCouponController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCouponController.m; sourceTree = "<group>"; };
+		88646786214214B200418223 /* CouponCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CouponCell.h; sourceTree = "<group>"; };
+		88646787214214B200418223 /* CouponCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CouponCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -592,6 +601,10 @@
 				884E4ED12140F75C007448CF /* MineController.m */,
 				884E4F0F21412F38007448CF /* MineTripController.h */,
 				884E4F1021412F38007448CF /* MineTripController.m */,
+				8864678021420A0600418223 /* InviteFriendsController.h */,
+				8864678121420A0600418223 /* InviteFriendsController.m */,
+				8864678321420BCA00418223 /* MyCouponController.h */,
+				8864678421420BCA00418223 /* MyCouponController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -606,6 +619,8 @@
 				884E4ED52140F8D8007448CF /* MineHeadView.m */,
 				884E4F1221413A19007448CF /* TripHeadView.h */,
 				884E4F1321413A19007448CF /* TripHeadView.m */,
+				88646786214214B200418223 /* CouponCell.h */,
+				88646787214214B200418223 /* CouponCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -893,6 +908,7 @@
 				8834539C213FE9B4002AAC62 /* UIView+CTExtensions.m in Sources */,
 				883453A7213FE9B4002AAC62 /* NSString+Cache.m in Sources */,
 				883452F5213FCBE1002AAC62 /* ViewController.m in Sources */,
+				8864678521420BCA00418223 /* MyCouponController.m in Sources */,
 				88345396213FE9B4002AAC62 /* AgentImageBaseModel.m in Sources */,
 				883453A5213FE9B4002AAC62 /* CLImageModel.m in Sources */,
 				884E4EDF21410599007448CF /* DetailMessageCell.m in Sources */,
@@ -905,6 +921,7 @@
 				884E4EFF21411292007448CF /* MineWalletCell.m in Sources */,
 				883453A2213FE9B4002AAC62 /* NSDictionary+TYAFNetworking.m in Sources */,
 				883453B6213FE9B4002AAC62 /* UserCurrentLocationManager.m in Sources */,
+				8864678221420A0600418223 /* InviteFriendsController.m in Sources */,
 				883453AD213FE9B4002AAC62 /* ZSRequestGenerator.m in Sources */,
 				883453AB213FE9B4002AAC62 /* ZSAPIProxy.m in Sources */,
 				88345391213FE9B4002AAC62 /* NSObject+AddKeyValueToObject.m in Sources */,
@@ -922,6 +939,7 @@
 				884E4F0E21412C9B007448CF /* SettingController.m in Sources */,
 				8834539F213FE9B4002AAC62 /* UIViewController+Loading.m in Sources */,
 				883453AF213FE9B4002AAC62 /* ZSURLResponse.m in Sources */,
+				88646788214214B200418223 /* CouponCell.m in Sources */,
 				883453C1213FEA14002AAC62 /* HomeController.m in Sources */,
 				883453B0213FE9B4002AAC62 /* DeviceModel.m in Sources */,
 				883452F2213FCBE1002AAC62 /* AppDelegate.m in Sources */,

@@ -10,6 +10,8 @@
 
 @interface SettingController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,strong)UITableView *tableview;
+@property(nonatomic,strong)UIButton *outBtn;
+
 @property(nonatomic,strong)NSArray *dataArr;
 @end
 
@@ -24,6 +26,22 @@
         _tableview.backgroundColor = DSColorFromHex(0xF0F0F0);
     }
     return _tableview;
+}
+-(UIButton *)outBtn{
+    if (!_outBtn) {
+        _outBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        [_outBtn.layer setMasksToBounds:YES];
+        [_outBtn.layer setCornerRadius:20];
+        [_outBtn.layer setBorderColor:DSColorFromHex(0x5AC72F).CGColor];
+        [_outBtn.layer setBorderWidth:1];
+        [_outBtn setTitle:@"退出" forState:UIControlStateNormal];
+        _outBtn.titleLabel.font = [UIFont systemFontOfSize:18];
+        [_outBtn setTitleColor:DSColorFromHex(0x5AC72F) forState:UIControlStateNormal];
+        
+        [_outBtn addTarget:self action:@selector(pressOut) forControlEvents:UIControlEventTouchUpInside];
+        _outBtn.backgroundColor = [UIColor whiteColor];
+    }
+    return _outBtn;
 }
 -(instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil{
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -41,7 +59,13 @@
         self.automaticallyAdjustsScrollViewInsets = NO;
     }
     [self.view addSubview:self.tableview];
-    
+    [self.view addSubview:self.outBtn];
+    [self.outBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.width.mas_equalTo(180);
+        make.height.mas_equalTo(40);
+        make.centerX.equalTo(self.view);
+        make.bottom.equalTo(self.view).offset(-30);
+    }];
     _dataArr = @[@"计费规则",@"充值协议",@"用户服务协议",@"用户积分规则",@"客服相关"];
 }
 
@@ -104,7 +128,9 @@
     
 }
 
-
+-(void)pressOut{
+    
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
