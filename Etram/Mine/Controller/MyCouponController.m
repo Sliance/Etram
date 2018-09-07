@@ -7,16 +7,17 @@
 //
 
 #import "MyCouponController.h"
-
-@interface MyCouponController ()<UITableViewDelegate,UITableViewDataSource>
+#import "CouponCell.h"
+#import "ZSSortSelectorView.h"
+@interface MyCouponController ()<UITableViewDelegate,UITableViewDataSource,ZSSortSelectorViewDelegate>
 @property(nonatomic,strong)UITableView *tableview;
-
+@property (nonatomic , strong) ZSSortSelectorView *scrollView;
 @end
 
 @implementation MyCouponController
 -(UITableView *)tableview{
     if (!_tableview) {
-        _tableview = [[UITableView alloc]initWithFrame:CGRectMake(0,0, SCREENWIDTH, SCREENHEIGHT-[self navHeightWithHeight]) style:UITableViewStylePlain];
+        _tableview = [[UITableView alloc]initWithFrame:CGRectMake(0,45, SCREENWIDTH, SCREENHEIGHT-[self navHeightWithHeight]) style:UITableViewStylePlain];
         _tableview.delegate = self;
         _tableview.dataSource = self;
         _tableview.backgroundColor = DSColorFromHex(0xF0F0F0);
@@ -25,6 +26,19 @@
     }
     return _tableview;
 }
+- (ZSSortSelectorView *)scrollView {
+    if (!_scrollView) {
+        _scrollView = [[ZSSortSelectorView alloc]initWithFrame:CGRectMake(0, 0, SCREENWIDTH, 45)];
+        _scrollView.delegate = self;
+        _scrollView.dataArr = @[@"骑行券",@"优惠券",@"用车券"];
+    }
+    return _scrollView;
+}
+
+- (void)chooseButtonType:(NSInteger)type {
+    NSLog(@"选择颜色%ld",type);
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     if (@available(iOS 11.0, *)) {
@@ -35,8 +49,9 @@
         
     }
     [self.view addSubview:self.tableview];
+    [self.view addSubview:self.scrollView];
     UIView *headView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, SCREENWIDTH, 45)];
-    headView.backgroundColor = [UIColor whiteColor];
+    headView.backgroundColor = DSColorFromHex(0xF0F0F0);
     UIButton *headbtn = [[UIButton alloc]initWithFrame:CGRectMake(SCREENWIDTH-90, 0, 90, 45)];
     [headbtn setTitle:@"使用说明" forState:UIControlStateNormal];
     [headbtn setTitleColor:DSColorFromHex(0x5AC72F) forState:UIControlStateNormal];
@@ -66,25 +81,13 @@
     return 145;
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    static NSString *identify = @"identify";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identify];
+    static NSString *identify = @"CouponCell";
+    CouponCell *cell = [tableView dequeueReusableCellWithIdentifier:identify];
     if (!cell) {
-        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:identify];
+        cell = [[CouponCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:identify];
     }
     
-//    cell.textLabel.text = _dataArr[indexPath.row];
-    cell.textLabel.textColor = DSColorFromHex(0x323232);
-    cell.textLabel.font = [UIFont systemFontOfSize:15];
-//    cell.imageView.image = [UIImage imageNamed:_listArr[indexPath.row]];
-    cell.detailTextLabel.textColor = DSColorFromHex(0xB4B4B4);
-    cell.detailTextLabel.font = [UIFont systemFontOfSize:12];
-    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    if (indexPath.row ==1) {
-        cell.detailTextLabel.text = @"176元";
-    }else if (indexPath.row ==2){
-        cell.detailTextLabel.text = @"共29.6公里";
-    }
     return cell;
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{

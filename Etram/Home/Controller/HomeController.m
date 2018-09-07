@@ -13,6 +13,7 @@
 #define DEFAULTSPAN 50
 #import "MineController.h"
 #import "LockPaytypeController.h"
+#import "AppointHomeView.h"
 
 @interface HomeController (){
     BOOL haveGetUserLocation;//是否获取到用户位置
@@ -29,6 +30,8 @@
 @property (strong, nonatomic) UIButton *dateBtn;
 @property (strong, nonatomic) UIButton *mineBtn;
 @property (strong, nonatomic) UIButton *codeBtn;
+@property(nonatomic,strong)AppointHomeView *appointView;
+
 @end
 
 @implementation HomeController
@@ -39,6 +42,14 @@
         _mapView.delegate = self;
     }
     return _mapView;
+}
+-(AppointHomeView *)appointView{
+    if (!_appointView) {
+        _appointView = [[AppointHomeView alloc]initWithFrame:CGRectMake(15, 15, SCREENWIDTH-30, 63)];
+        [_appointView.layer setCornerRadius:5];
+        _appointView.hidden = YES;
+    }
+    return _appointView;
 }
 -(UIButton *)mineBtn{
     if (!_mineBtn) {
@@ -58,7 +69,7 @@
         [_dateBtn.layer setCornerRadius:22];
         [_dateBtn setImage:[UIImage imageNamed:@"history_normal"] forState:UIControlStateNormal];
         [_dateBtn setImage:[UIImage imageNamed:@"history_icon"] forState:UIControlStateSelected];
-        [_dateBtn addTarget:self action:@selector(pressDateBtn) forControlEvents:UIControlEventTouchUpInside];
+        [_dateBtn addTarget:self action:@selector(pressDateBtn:) forControlEvents:UIControlEventTouchUpInside];
         _dateBtn.backgroundColor = [UIColor whiteColor];
     }
     return _dateBtn;
@@ -140,6 +151,7 @@
     self.edgesForExtendedLayout = UIRectEdgeNone;
     self.automaticallyAdjustsScrollViewInsets = NO;
     self.navigationController.toolbarHidden = NO;
+    [self.view addSubview:self.appointView];
     [self reloadUI];
 }
 
@@ -456,8 +468,13 @@
     LockPaytypeController *lockVC = [[LockPaytypeController alloc]init];
     [self.navigationController pushViewController:lockVC animated:YES];
 }
--(void)pressDateBtn{
-    
+-(void)pressDateBtn:(UIButton*)sender{
+    sender.selected = !sender.selected;
+    if (sender.selected ==YES) {
+        self.appointView.hidden = NO;
+    }else{
+        self.appointView.hidden = YES;
+    }
 }
 -(void)pressArrowBtn{
     

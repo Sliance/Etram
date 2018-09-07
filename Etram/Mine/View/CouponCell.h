@@ -9,5 +9,9 @@
 #import "BaseTableViewCell.h"
 
 @interface CouponCell : BaseTableViewCell
-
+@property(nonatomic,strong)UIImageView *bgimage;
+@property(nonatomic,strong)UILabel *nameLabel;
+@property(nonatomic,strong)UILabel *detailLabel;
+@property(nonatomic,strong)UILabel *titleLabel;
+@property(nonatomic,strong)UILabel *contentLabel;
 @end

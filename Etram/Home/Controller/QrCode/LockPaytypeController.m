@@ -8,6 +8,8 @@
 
 #import "LockPaytypeController.h"
 #import "ScanQrCodeController.h"
+#import "ManuallyUnlockController.h"
+
 @interface LockPaytypeController ()
 @property (strong, nonatomic) UIButton *codeBtn;
 @property (strong, nonatomic) UIButton *inputBtn;
@@ -104,12 +106,13 @@
     return self;
 }
 -(void)pressInputBtn{
-    
+    ManuallyUnlockController *manVC = [[ManuallyUnlockController alloc]init];
+    [self.navigationController pushViewController:manVC animated:YES];
 }
 -(void)pressCodeBtn{
     UIStoryboard *story = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
     ScanQrCodeController *qrVC = [story instantiateViewControllerWithIdentifier:@"ScanQrCodeController"];
-    qrVC.hidesBottomBarWhenPushed = YES;
+    
     [self.navigationController pushViewController:qrVC animated:YES];
 }
 - (void)didReceiveMemoryWarning {

@@ -15,13 +15,15 @@
 #import "SettingController.h"
 #import "InviteFriendsController.h"
 #import "MyCouponController.h"
+#import "ServiceAlertView.h"
+#import "SubmitQuestionsController.h"
 
 @interface MineController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,strong)UITableView *tableview;
 @property(nonatomic,strong)NSArray *listArr;
 @property(nonatomic,strong)NSArray *dataArr;
 @property(nonatomic,strong)MineHeadView *headView;
-
+@property(nonatomic,strong)ServiceAlertView *serviceView;
 @end
 
 @implementation MineController
@@ -35,6 +37,13 @@
         _tableview.separatorStyle = UITableViewCellSeparatorStyleNone;
     }
     return _tableview;
+}
+-(ServiceAlertView *)serviceView{
+    if (!_serviceView) {
+        _serviceView = [[ServiceAlertView alloc]initWithFrame:CGRectMake(0, 0, SCREENWIDTH, SCREENHEIGHT)];
+        _serviceView.hidden = YES;
+    }
+    return _serviceView;
 }
 -(MineHeadView *)headView{
     if (!_headView) {
@@ -63,6 +72,7 @@
         
     }
     [self.view addSubview:self.tableview];
+    [self.view addSubview:self.serviceView];
     self.tableview.tableHeaderView = self.headView;
     __weak typeof(self)weakself = self;
     [self.headView setSkipBlock:^(NSInteger index) {
@@ -71,6 +81,15 @@
     }];
     _listArr = @[@"message_mine",@"wallet_mine",@"car_mine",@"coupon_mine",@"share_mine",@"seervice_mine",@"set_mine"];
     _dataArr = @[@"我的消息",@"我的钱包",@"我的行程",@"我的卡券",@"邀请好友",@"客户服务",@"用户设置"];
+    
+    [self.serviceView setSelectedBlock:^(NSInteger index) {
+        SubmitQuestionsController *questionVC = [[SubmitQuestionsController alloc]init];
+        [questionVC setSelectedIndex:index];
+        [weakself.navigationController pushViewController:questionVC animated:YES];
+    }];
+    [self.serviceView setTapBlock:^(NSInteger index) {
+        weakself.serviceView.hidden = YES;
+    }];
 }
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 1;
@@ -142,7 +161,7 @@
             break;
         case 5:
         {
-            
+            _serviceView.hidden = !_serviceView.hidden;
         }
             break;
         case 6:
