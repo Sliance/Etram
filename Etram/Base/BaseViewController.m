@@ -22,7 +22,7 @@
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil{
     if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
         
-        self.view.backgroundColor = DSColorFromHex(0xF0F0F0);
+        self.view.backgroundColor = [UIColor whiteColor];
         
         [self adjustNavigationUI:self.navigationController];
         

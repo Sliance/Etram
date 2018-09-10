@@ -7,6 +7,9 @@
 //
 
 #import "SettingController.h"
+#import "AboutController.h"
+
+#import "AccountRulesController.h"
 
 @interface SettingController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,strong)UITableView *tableview;
@@ -66,7 +69,7 @@
         make.centerX.equalTo(self.view);
         make.bottom.equalTo(self.view).offset(-30);
     }];
-    _dataArr = @[@"计费规则",@"充值协议",@"用户服务协议",@"用户积分规则",@"客服相关"];
+    _dataArr = @[@"计费规则",@"充值协议",@"用户积分规则",@"客服相关"];
 }
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
@@ -125,7 +128,17 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    
+    if (indexPath.section ==0) {
+        if (indexPath.row ==1) {
+            AboutController *aboutVC = [[AboutController alloc]init];
+            [self.navigationController pushViewController:aboutVC animated:YES];
+        }
+    }else if (indexPath.section ==1){
+        if (indexPath.row ==0) {
+            AccountRulesController *ruleVC = [[AccountRulesController alloc]init];
+            [self.navigationController pushViewController:ruleVC animated:YES];
+        }
+    }
 }
 
 -(void)pressOut{
@@ -135,7 +148,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+                    
 /*
 #pragma mark - Navigation
 

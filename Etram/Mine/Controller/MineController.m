@@ -83,6 +83,7 @@
     _dataArr = @[@"我的消息",@"我的钱包",@"我的行程",@"我的卡券",@"邀请好友",@"客户服务",@"用户设置"];
     
     [self.serviceView setSelectedBlock:^(NSInteger index) {
+         weakself.serviceView.hidden = YES;
         SubmitQuestionsController *questionVC = [[SubmitQuestionsController alloc]init];
         [questionVC setSelectedIndex:index];
         [weakself.navigationController pushViewController:questionVC animated:YES];

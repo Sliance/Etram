@@ -14,6 +14,7 @@
 #import "MineController.h"
 #import "LockPaytypeController.h"
 #import "AppointHomeView.h"
+#import "EndRideController.h"
 
 @interface HomeController (){
     BOOL haveGetUserLocation;//是否获取到用户位置
@@ -477,7 +478,8 @@
     }
 }
 -(void)pressArrowBtn{
-    
+    EndRideController *endVC = [[EndRideController alloc]init];
+    [self.navigationController pushViewController:endVC animated:YES];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

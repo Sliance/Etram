@@ -94,6 +94,16 @@
 		886467A1214280C800418223 /* ServiceAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 886467A0214280C800418223 /* ServiceAlertView.m */; };
 		886467A421428C9F00418223 /* SubmitQuestionsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 886467A321428C9F00418223 /* SubmitQuestionsController.m */; };
 		88B72D5121460E90000AA461 /* UIPlaceHolderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B72D5021460E90000AA461 /* UIPlaceHolderTextView.m */; };
+		88B72D58214638EA000AA461 /* UnlockingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B72D57214638EA000AA461 /* UnlockingController.m */; };
+		88B72D5B21463905000AA461 /* UnlockSuccessController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B72D5A21463905000AA461 /* UnlockSuccessController.m */; };
+		88B72D5E21463A33000AA461 /* EndRideController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B72D5D21463A33000AA461 /* EndRideController.m */; };
+		88B72D6121463A56000AA461 /* PaySuccessController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B72D6021463A56000AA461 /* PaySuccessController.m */; };
+		88B72D6421463A88000AA461 /* RideEndingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B72D6321463A88000AA461 /* RideEndingController.m */; };
+		88B72D6721463B0E000AA461 /* TemporaryLockController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B72D6621463B0E000AA461 /* TemporaryLockController.m */; };
+		88B72D6A21463CED000AA461 /* UnlockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B72D6921463CED000AA461 /* UnlockView.m */; };
+		88B72D6D21464BC8000AA461 /* TripDetailHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B72D6C21464BC8000AA461 /* TripDetailHeadView.m */; };
+		88B72D7221466CCB000AA461 /* AboutController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B72D7121466CCB000AA461 /* AboutController.m */; };
+		88B72D7521467687000AA461 /* AccountRulesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B72D7421467687000AA461 /* AccountRulesController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -292,6 +302,26 @@
 		886467A321428C9F00418223 /* SubmitQuestionsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubmitQuestionsController.m; sourceTree = "<group>"; };
 		88B72D4F21460E90000AA461 /* UIPlaceHolderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIPlaceHolderTextView.h; sourceTree = "<group>"; };
 		88B72D5021460E90000AA461 /* UIPlaceHolderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIPlaceHolderTextView.m; sourceTree = "<group>"; };
+		88B72D56214638EA000AA461 /* UnlockingController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnlockingController.h; sourceTree = "<group>"; };
+		88B72D57214638EA000AA461 /* UnlockingController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnlockingController.m; sourceTree = "<group>"; };
+		88B72D5921463905000AA461 /* UnlockSuccessController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnlockSuccessController.h; sourceTree = "<group>"; };
+		88B72D5A21463905000AA461 /* UnlockSuccessController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnlockSuccessController.m; sourceTree = "<group>"; };
+		88B72D5C21463A33000AA461 /* EndRideController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EndRideController.h; sourceTree = "<group>"; };
+		88B72D5D21463A33000AA461 /* EndRideController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EndRideController.m; sourceTree = "<group>"; };
+		88B72D5F21463A56000AA461 /* PaySuccessController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaySuccessController.h; sourceTree = "<group>"; };
+		88B72D6021463A56000AA461 /* PaySuccessController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaySuccessController.m; sourceTree = "<group>"; };
+		88B72D6221463A88000AA461 /* RideEndingController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RideEndingController.h; sourceTree = "<group>"; };
+		88B72D6321463A88000AA461 /* RideEndingController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RideEndingController.m; sourceTree = "<group>"; };
+		88B72D6521463B0E000AA461 /* TemporaryLockController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TemporaryLockController.h; sourceTree = "<group>"; };
+		88B72D6621463B0E000AA461 /* TemporaryLockController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TemporaryLockController.m; sourceTree = "<group>"; };
+		88B72D6821463CED000AA461 /* UnlockView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnlockView.h; sourceTree = "<group>"; };
+		88B72D6921463CED000AA461 /* UnlockView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnlockView.m; sourceTree = "<group>"; };
+		88B72D6B21464BC8000AA461 /* TripDetailHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TripDetailHeadView.h; sourceTree = "<group>"; };
+		88B72D6C21464BC8000AA461 /* TripDetailHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TripDetailHeadView.m; sourceTree = "<group>"; };
+		88B72D7021466CCB000AA461 /* AboutController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AboutController.h; sourceTree = "<group>"; };
+		88B72D7121466CCB000AA461 /* AboutController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AboutController.m; sourceTree = "<group>"; };
+		88B72D7321467687000AA461 /* AccountRulesController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccountRulesController.h; sourceTree = "<group>"; };
+		88B72D7421467687000AA461 /* AccountRulesController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AccountRulesController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -604,6 +634,8 @@
 		883453BE213FE9E0002AAC62 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				88B72D6F214657A0000AA461 /* ride */,
+				88B72D6E2146578E000AA461 /* unlock */,
 				884E4EE021410A85007448CF /* QrCode */,
 				883453BF213FEA14002AAC62 /* HomeController.h */,
 				883453C0213FEA14002AAC62 /* HomeController.m */,
@@ -729,6 +761,10 @@
 				884E4F0521412518007448CF /* MineInformationController.m */,
 				884E4F0C21412C9B007448CF /* SettingController.h */,
 				884E4F0D21412C9B007448CF /* SettingController.m */,
+				88B72D7021466CCB000AA461 /* AboutController.h */,
+				88B72D7121466CCB000AA461 /* AboutController.m */,
+				88B72D7321467687000AA461 /* AccountRulesController.h */,
+				88B72D7421467687000AA461 /* AccountRulesController.m */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -759,6 +795,10 @@
 				8864679121426FBB00418223 /* SYBoxTextField */,
 				886467982142769000418223 /* AppointHomeView.h */,
 				886467992142769000418223 /* AppointHomeView.m */,
+				88B72D6821463CED000AA461 /* UnlockView.h */,
+				88B72D6921463CED000AA461 /* UnlockView.m */,
+				88B72D6B21464BC8000AA461 /* TripDetailHeadView.h */,
+				88B72D6C21464BC8000AA461 /* TripDetailHeadView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -805,6 +845,32 @@
 				886467A321428C9F00418223 /* SubmitQuestionsController.m */,
 			);
 			path = question;
+			sourceTree = "<group>";
+		};
+		88B72D6E2146578E000AA461 /* unlock */ = {
+			isa = PBXGroup;
+			children = (
+				88B72D56214638EA000AA461 /* UnlockingController.h */,
+				88B72D57214638EA000AA461 /* UnlockingController.m */,
+				88B72D5921463905000AA461 /* UnlockSuccessController.h */,
+				88B72D5A21463905000AA461 /* UnlockSuccessController.m */,
+			);
+			path = unlock;
+			sourceTree = "<group>";
+		};
+		88B72D6F214657A0000AA461 /* ride */ = {
+			isa = PBXGroup;
+			children = (
+				88B72D6521463B0E000AA461 /* TemporaryLockController.h */,
+				88B72D6621463B0E000AA461 /* TemporaryLockController.m */,
+				88B72D5C21463A33000AA461 /* EndRideController.h */,
+				88B72D5D21463A33000AA461 /* EndRideController.m */,
+				88B72D6221463A88000AA461 /* RideEndingController.h */,
+				88B72D6321463A88000AA461 /* RideEndingController.m */,
+				88B72D5F21463A56000AA461 /* PaySuccessController.h */,
+				88B72D6021463A56000AA461 /* PaySuccessController.m */,
+			);
+			path = ride;
 			sourceTree = "<group>";
 		};
 		9A5552EFC4C11CDD1EA47D44 /* Pods */ = {
@@ -993,15 +1059,19 @@
 				883453A4213FE9B4002AAC62 /* BaseApi.m in Sources */,
 				884E4EDB21410528007448CF /* MessageViewController.m in Sources */,
 				883453A9213FE9B4002AAC62 /* UserBaseInfoModel.m in Sources */,
+				88B72D6421463A88000AA461 /* RideEndingController.m in Sources */,
 				8834538F213FE9B4002AAC62 /* CreatQRCodeAndBarCodeFromLeon.m in Sources */,
 				884E4EF221411245007448CF /* RechargeViewController.m in Sources */,
 				883453B3213FE9B4002AAC62 /* ImageUtils.m in Sources */,
 				883453A8213FE9B4002AAC62 /* NSString+CLTools.m in Sources */,
 				883453AE213FE9B4002AAC62 /* ZSSignatureGenerator.m in Sources */,
+				88B72D5E21463A33000AA461 /* EndRideController.m in Sources */,
 				884E4EE621410CCA007448CF /* LockPaytypeController.m in Sources */,
 				884E4F0321411292007448CF /* TradingDetailCell.m in Sources */,
+				88B72D7221466CCB000AA461 /* AboutController.m in Sources */,
 				884E4EE321410A85007448CF /* ScanQrCodeController.m in Sources */,
 				884E4F0021411292007448CF /* PayTypeView.m in Sources */,
+				88B72D7521467687000AA461 /* AccountRulesController.m in Sources */,
 				88345392213FE9B4002AAC62 /* NSString+MD5Addition.m in Sources */,
 				88345399213FE9B4002AAC62 /* UIImage+RoundedCorner.m in Sources */,
 				883453B2213FE9B4002AAC62 /* FilePathManager.m in Sources */,
@@ -1018,11 +1088,13 @@
 				88345395213FE9B4002AAC62 /* UIDevice+IdentifierAddition.m in Sources */,
 				884E4F0121411292007448CF /* RechargeBtn.m in Sources */,
 				88345390213FE9B4002AAC62 /* NSDate+Add.m in Sources */,
+				88B72D5B21463905000AA461 /* UnlockSuccessController.m in Sources */,
 				884E4ED22140F75C007448CF /* MineController.m in Sources */,
 				883453A6213FE9B4002AAC62 /* CLNetworkingManager.m in Sources */,
 				8864679D21427F1D00418223 /* DecodSuccessController.m in Sources */,
 				884E4EFF21411292007448CF /* MineWalletCell.m in Sources */,
 				883453A2213FE9B4002AAC62 /* NSDictionary+TYAFNetworking.m in Sources */,
+				88B72D6121463A56000AA461 /* PaySuccessController.m in Sources */,
 				886467A1214280C800418223 /* ServiceAlertView.m in Sources */,
 				883453B6213FE9B4002AAC62 /* UserCurrentLocationManager.m in Sources */,
 				8864678221420A0600418223 /* InviteFriendsController.m in Sources */,
@@ -1047,6 +1119,7 @@
 				883453AF213FE9B4002AAC62 /* ZSURLResponse.m in Sources */,
 				88646788214214B200418223 /* CouponCell.m in Sources */,
 				883453C1213FEA14002AAC62 /* HomeController.m in Sources */,
+				88B72D6A21463CED000AA461 /* UnlockView.m in Sources */,
 				8864679421426FBB00418223 /* SYBoxTextField.m in Sources */,
 				883453B0213FE9B4002AAC62 /* DeviceModel.m in Sources */,
 				883452F2213FCBE1002AAC62 /* AppDelegate.m in Sources */,
@@ -1054,12 +1127,15 @@
 				883453B4213FE9B4002AAC62 /* NSString+Hash.m in Sources */,
 				883453B7213FE9B4002AAC62 /* BaseCollectionViewCell.m in Sources */,
 				884E4EF121411245007448CF /* MyIntegralController.m in Sources */,
+				88B72D6721463B0E000AA461 /* TemporaryLockController.m in Sources */,
 				8864678B2142654B00418223 /* ZSSortSelectorView.m in Sources */,
 				884E4F1421413A19007448CF /* TripHeadView.m in Sources */,
 				883453A3213FE9B4002AAC62 /* NSURLRequest+TYAFNetworking.m in Sources */,
 				884E4F0721412518007448CF /* MineInformationController.m in Sources */,
 				8834539E213FE9B4002AAC62 /* UserDefaultCashe.m in Sources */,
+				88B72D58214638EA000AA461 /* UnlockingController.m in Sources */,
 				88B72D5121460E90000AA461 /* UIPlaceHolderTextView.m in Sources */,
+				88B72D6D21464BC8000AA461 /* TripDetailHeadView.m in Sources */,
 				884E4F0221411292007448CF /* RechargeHeadView.m in Sources */,
 				883453AC213FE9B4002AAC62 /* ZSRequestCenter.m in Sources */,
 				88345393213FE9B4002AAC62 /* NSString+RTStyle.m in Sources */,

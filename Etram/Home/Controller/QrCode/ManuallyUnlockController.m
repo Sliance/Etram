@@ -9,6 +9,8 @@
 #import "ManuallyUnlockController.h"
 #import "SYBoxTextField.h"
 #import "SettingController.h"
+#import "UnlockingController.h"
+
 @interface ManuallyUnlockController ()
 @property(nonatomic,strong)UILabel *titleLabel;
 @property(nonatomic,strong)UIButton *lockBtn;
@@ -89,7 +91,8 @@
 }
 
 -(void)pressUnlock{
-    
+    UnlockingController *unlockVC = [[UnlockingController alloc]init];
+    [self.navigationController pushViewController:unlockVC animated:YES];
 }
 -(void)pressHelp{
     SettingController *setVC = [[SettingController alloc]init];

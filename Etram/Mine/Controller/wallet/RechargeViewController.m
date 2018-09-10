@@ -75,6 +75,7 @@
 -(instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil{
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
+        self.view.backgroundColor = DSColorFromHex(0xF0F0F0);
         [self setTitle:@"充值余额"];
     }
     return self;
