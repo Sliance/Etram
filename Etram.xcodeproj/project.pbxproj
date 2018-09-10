@@ -93,6 +93,7 @@
 		8864679D21427F1D00418223 /* DecodSuccessController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8864679C21427F1D00418223 /* DecodSuccessController.m */; };
 		886467A1214280C800418223 /* ServiceAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 886467A0214280C800418223 /* ServiceAlertView.m */; };
 		886467A421428C9F00418223 /* SubmitQuestionsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 886467A321428C9F00418223 /* SubmitQuestionsController.m */; };
+		88B72D5121460E90000AA461 /* UIPlaceHolderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B72D5021460E90000AA461 /* UIPlaceHolderTextView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -289,6 +290,8 @@
 		886467A0214280C800418223 /* ServiceAlertView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ServiceAlertView.m; sourceTree = "<group>"; };
 		886467A221428C9F00418223 /* SubmitQuestionsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubmitQuestionsController.h; sourceTree = "<group>"; };
 		886467A321428C9F00418223 /* SubmitQuestionsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubmitQuestionsController.m; sourceTree = "<group>"; };
+		88B72D4F21460E90000AA461 /* UIPlaceHolderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIPlaceHolderTextView.h; sourceTree = "<group>"; };
+		88B72D5021460E90000AA461 /* UIPlaceHolderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIPlaceHolderTextView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -358,6 +361,7 @@
 				883452F6213FCBE1002AAC62 /* Main.storyboard */,
 				883452F9213FCBE2002AAC62 /* Assets.xcassets */,
 				883452FB213FCBE2002AAC62 /* LaunchScreen.storyboard */,
+				88B72D4D21460E79000AA461 /* Tool */,
 				88345382213FE9B4002AAC62 /* Base */,
 				88345323213FE9B2002AAC62 /* Category */,
 				8834534C213FE9B3002AAC62 /* Network */,
@@ -619,6 +623,7 @@
 		884E4ECF2140F731007448CF /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				88B72D5221461182000AA461 /* question */,
 				884E4F0421412502007448CF /* Setting */,
 				884E4EE721411245007448CF /* wallet */,
 				884E4ED821410510007448CF /* Message */,
@@ -630,8 +635,6 @@
 				8864678121420A0600418223 /* InviteFriendsController.m */,
 				8864678321420BCA00418223 /* MyCouponController.h */,
 				8864678421420BCA00418223 /* MyCouponController.m */,
-				886467A221428C9F00418223 /* SubmitQuestionsController.h */,
-				886467A321428C9F00418223 /* SubmitQuestionsController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -776,6 +779,32 @@
 				886467A0214280C800418223 /* ServiceAlertView.m */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		88B72D4D21460E79000AA461 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				88B72D4E21460E90000AA461 /* UITextView */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		88B72D4E21460E90000AA461 /* UITextView */ = {
+			isa = PBXGroup;
+			children = (
+				88B72D4F21460E90000AA461 /* UIPlaceHolderTextView.h */,
+				88B72D5021460E90000AA461 /* UIPlaceHolderTextView.m */,
+			);
+			path = UITextView;
+			sourceTree = "<group>";
+		};
+		88B72D5221461182000AA461 /* question */ = {
+			isa = PBXGroup;
+			children = (
+				886467A221428C9F00418223 /* SubmitQuestionsController.h */,
+				886467A321428C9F00418223 /* SubmitQuestionsController.m */,
+			);
+			path = question;
 			sourceTree = "<group>";
 		};
 		9A5552EFC4C11CDD1EA47D44 /* Pods */ = {
@@ -1030,6 +1059,7 @@
 				883453A3213FE9B4002AAC62 /* NSURLRequest+TYAFNetworking.m in Sources */,
 				884E4F0721412518007448CF /* MineInformationController.m in Sources */,
 				8834539E213FE9B4002AAC62 /* UserDefaultCashe.m in Sources */,
+				88B72D5121460E90000AA461 /* UIPlaceHolderTextView.m in Sources */,
 				884E4F0221411292007448CF /* RechargeHeadView.m in Sources */,
 				883453AC213FE9B4002AAC62 /* ZSRequestCenter.m in Sources */,
 				88345393213FE9B4002AAC62 /* NSString+RTStyle.m in Sources */,
