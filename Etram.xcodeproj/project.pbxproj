@@ -93,6 +93,7 @@
 		8864679D21427F1D00418223 /* DecodSuccessController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8864679C21427F1D00418223 /* DecodSuccessController.m */; };
 		886467A1214280C800418223 /* ServiceAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 886467A0214280C800418223 /* ServiceAlertView.m */; };
 		886467A421428C9F00418223 /* SubmitQuestionsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 886467A321428C9F00418223 /* SubmitQuestionsController.m */; };
+		888AC08221479ABF0030BC12 /* UserAgreementController.m in Sources */ = {isa = PBXBuildFile; fileRef = 888AC08121479ABF0030BC12 /* UserAgreementController.m */; };
 		88B72D5121460E90000AA461 /* UIPlaceHolderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B72D5021460E90000AA461 /* UIPlaceHolderTextView.m */; };
 		88B72D58214638EA000AA461 /* UnlockingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B72D57214638EA000AA461 /* UnlockingController.m */; };
 		88B72D5B21463905000AA461 /* UnlockSuccessController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B72D5A21463905000AA461 /* UnlockSuccessController.m */; };
@@ -300,6 +301,8 @@
 		886467A0214280C800418223 /* ServiceAlertView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ServiceAlertView.m; sourceTree = "<group>"; };
 		886467A221428C9F00418223 /* SubmitQuestionsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubmitQuestionsController.h; sourceTree = "<group>"; };
 		886467A321428C9F00418223 /* SubmitQuestionsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubmitQuestionsController.m; sourceTree = "<group>"; };
+		888AC08021479ABF0030BC12 /* UserAgreementController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserAgreementController.h; sourceTree = "<group>"; };
+		888AC08121479ABF0030BC12 /* UserAgreementController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserAgreementController.m; sourceTree = "<group>"; };
 		88B72D4F21460E90000AA461 /* UIPlaceHolderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIPlaceHolderTextView.h; sourceTree = "<group>"; };
 		88B72D5021460E90000AA461 /* UIPlaceHolderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIPlaceHolderTextView.m; sourceTree = "<group>"; };
 		88B72D56214638EA000AA461 /* UnlockingController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnlockingController.h; sourceTree = "<group>"; };
@@ -765,6 +768,8 @@
 				88B72D7121466CCB000AA461 /* AboutController.m */,
 				88B72D7321467687000AA461 /* AccountRulesController.h */,
 				88B72D7421467687000AA461 /* AccountRulesController.m */,
+				888AC08021479ABF0030BC12 /* UserAgreementController.h */,
+				888AC08121479ABF0030BC12 /* UserAgreementController.m */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -1090,6 +1095,7 @@
 				88345390213FE9B4002AAC62 /* NSDate+Add.m in Sources */,
 				88B72D5B21463905000AA461 /* UnlockSuccessController.m in Sources */,
 				884E4ED22140F75C007448CF /* MineController.m in Sources */,
+				888AC08221479ABF0030BC12 /* UserAgreementController.m in Sources */,
 				883453A6213FE9B4002AAC62 /* CLNetworkingManager.m in Sources */,
 				8864679D21427F1D00418223 /* DecodSuccessController.m in Sources */,
 				884E4EFF21411292007448CF /* MineWalletCell.m in Sources */,

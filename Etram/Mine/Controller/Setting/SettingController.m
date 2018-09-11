@@ -10,6 +10,7 @@
 #import "AboutController.h"
 
 #import "AccountRulesController.h"
+#import "UserAgreementController.h"
 
 @interface SettingController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,strong)UITableView *tableview;
@@ -69,7 +70,7 @@
         make.centerX.equalTo(self.view);
         make.bottom.equalTo(self.view).offset(-30);
     }];
-    _dataArr = @[@"计费规则",@"充值协议",@"用户积分规则",@"客服相关"];
+    _dataArr = @[@"计费规则",@"充值协议",@"用户服务协议",@"客服相关"];
 }
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
@@ -136,6 +137,9 @@
     }else if (indexPath.section ==1){
         if (indexPath.row ==0) {
             AccountRulesController *ruleVC = [[AccountRulesController alloc]init];
+            [self.navigationController pushViewController:ruleVC animated:YES];
+        }else if(indexPath.row ==2){
+            UserAgreementController *ruleVC = [[UserAgreementController alloc]init];
             [self.navigationController pushViewController:ruleVC animated:YES];
         }
     }
