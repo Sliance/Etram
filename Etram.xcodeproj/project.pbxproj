@@ -19,8 +19,6 @@
 		8834538F213FE9B4002AAC62 /* CreatQRCodeAndBarCodeFromLeon.m in Sources */ = {isa = PBXBuildFile; fileRef = 88345326213FE9B2002AAC62 /* CreatQRCodeAndBarCodeFromLeon.m */; };
 		88345390213FE9B4002AAC62 /* NSDate+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = 88345329213FE9B2002AAC62 /* NSDate+Add.m */; };
 		88345391213FE9B4002AAC62 /* NSObject+AddKeyValueToObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 8834532C213FE9B2002AAC62 /* NSObject+AddKeyValueToObject.m */; };
-		88345392213FE9B4002AAC62 /* NSString+MD5Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8834532F213FE9B2002AAC62 /* NSString+MD5Addition.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		88345393213FE9B4002AAC62 /* NSString+RTStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 88345331213FE9B2002AAC62 /* NSString+RTStyle.m */; };
 		88345394213FE9B4002AAC62 /* UDIDWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 88345333213FE9B2002AAC62 /* UDIDWrapper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		88345395213FE9B4002AAC62 /* UIDevice+IdentifierAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 88345335213FE9B2002AAC62 /* UIDevice+IdentifierAddition.m */; };
 		88345396213FE9B4002AAC62 /* AgentImageBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 88345338213FE9B2002AAC62 /* AgentImageBaseModel.m */; };
@@ -82,6 +80,16 @@
 		884E4F0E21412C9B007448CF /* SettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 884E4F0D21412C9B007448CF /* SettingController.m */; };
 		884E4F1121412F38007448CF /* MineTripController.m in Sources */ = {isa = PBXBuildFile; fileRef = 884E4F1021412F38007448CF /* MineTripController.m */; };
 		884E4F1421413A19007448CF /* TripHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 884E4F1321413A19007448CF /* TripHeadView.m */; };
+		886396422150A49800E7B79D /* HomeServiceApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 886396412150A49800E7B79D /* HomeServiceApi.m */; };
+		886396472151032E00E7B79D /* LoginReq.m in Sources */ = {isa = PBXBuildFile; fileRef = 886396452151032E00E7B79D /* LoginReq.m */; };
+		8863964D21510E3B00E7B79D /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8863964C21510E3B00E7B79D /* LoginViewController.m */; };
+		8863965321510E8B00E7B79D /* DPSwizzledMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 8863965021510E8A00E7B79D /* DPSwizzledMethod.m */; };
+		8863965421510E8B00E7B79D /* DPTextViewVerify.m in Sources */ = {isa = PBXBuildFile; fileRef = 8863965221510E8A00E7B79D /* DPTextViewVerify.m */; };
+		8863966021510EF000E7B79D /* NSData+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 8863965721510EF000E7B79D /* NSData+Ext.m */; };
+		8863966121510EF000E7B79D /* NSString+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 8863965921510EF000E7B79D /* NSString+Ext.m */; };
+		8863966221510EF000E7B79D /* NSString+MD5Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8863965B21510EF000E7B79D /* NSString+MD5Addition.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8863966321510EF000E7B79D /* NSString+Path.m in Sources */ = {isa = PBXBuildFile; fileRef = 8863965D21510EF000E7B79D /* NSString+Path.m */; };
+		8863966421510EF000E7B79D /* NSString+RTStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8863965F21510EF000E7B79D /* NSString+RTStyle.m */; };
 		8864678221420A0600418223 /* InviteFriendsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8864678121420A0600418223 /* InviteFriendsController.m */; };
 		8864678521420BCA00418223 /* MyCouponController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8864678421420BCA00418223 /* MyCouponController.m */; };
 		88646788214214B200418223 /* CouponCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 88646787214214B200418223 /* CouponCell.m */; };
@@ -151,10 +159,6 @@
 		88345329213FE9B2002AAC62 /* NSDate+Add.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Add.m"; sourceTree = "<group>"; };
 		8834532B213FE9B2002AAC62 /* NSObject+AddKeyValueToObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+AddKeyValueToObject.h"; sourceTree = "<group>"; };
 		8834532C213FE9B2002AAC62 /* NSObject+AddKeyValueToObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+AddKeyValueToObject.m"; sourceTree = "<group>"; };
-		8834532E213FE9B2002AAC62 /* NSString+MD5Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5Addition.h"; sourceTree = "<group>"; };
-		8834532F213FE9B2002AAC62 /* NSString+MD5Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5Addition.m"; sourceTree = "<group>"; };
-		88345330213FE9B2002AAC62 /* NSString+RTStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+RTStyle.h"; sourceTree = "<group>"; };
-		88345331213FE9B2002AAC62 /* NSString+RTStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+RTStyle.m"; sourceTree = "<group>"; };
 		88345332213FE9B2002AAC62 /* UDIDWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UDIDWrapper.h; sourceTree = "<group>"; };
 		88345333213FE9B2002AAC62 /* UDIDWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UDIDWrapper.m; sourceTree = "<group>"; };
 		88345334213FE9B2002AAC62 /* UIDevice+IdentifierAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+IdentifierAddition.h"; sourceTree = "<group>"; };
@@ -279,6 +283,26 @@
 		884E4F1021412F38007448CF /* MineTripController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineTripController.m; sourceTree = "<group>"; };
 		884E4F1221413A19007448CF /* TripHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TripHeadView.h; sourceTree = "<group>"; };
 		884E4F1321413A19007448CF /* TripHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TripHeadView.m; sourceTree = "<group>"; };
+		886396402150A49800E7B79D /* HomeServiceApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeServiceApi.h; sourceTree = "<group>"; };
+		886396412150A49800E7B79D /* HomeServiceApi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeServiceApi.m; sourceTree = "<group>"; };
+		886396452151032E00E7B79D /* LoginReq.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginReq.m; sourceTree = "<group>"; };
+		886396462151032E00E7B79D /* LoginReq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginReq.h; sourceTree = "<group>"; };
+		8863964B21510E3B00E7B79D /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		8863964C21510E3B00E7B79D /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		8863964F21510E8A00E7B79D /* DPSwizzledMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPSwizzledMethod.h; sourceTree = "<group>"; };
+		8863965021510E8A00E7B79D /* DPSwizzledMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPSwizzledMethod.m; sourceTree = "<group>"; };
+		8863965121510E8A00E7B79D /* DPTextViewVerify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPTextViewVerify.h; sourceTree = "<group>"; };
+		8863965221510E8A00E7B79D /* DPTextViewVerify.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPTextViewVerify.m; sourceTree = "<group>"; };
+		8863965621510EF000E7B79D /* NSData+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Ext.h"; sourceTree = "<group>"; };
+		8863965721510EF000E7B79D /* NSData+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Ext.m"; sourceTree = "<group>"; };
+		8863965821510EF000E7B79D /* NSString+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Ext.h"; sourceTree = "<group>"; };
+		8863965921510EF000E7B79D /* NSString+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Ext.m"; sourceTree = "<group>"; };
+		8863965A21510EF000E7B79D /* NSString+MD5Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5Addition.h"; sourceTree = "<group>"; };
+		8863965B21510EF000E7B79D /* NSString+MD5Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5Addition.m"; sourceTree = "<group>"; };
+		8863965C21510EF000E7B79D /* NSString+Path.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Path.h"; sourceTree = "<group>"; };
+		8863965D21510EF000E7B79D /* NSString+Path.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Path.m"; sourceTree = "<group>"; };
+		8863965E21510EF000E7B79D /* NSString+RTStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+RTStyle.h"; sourceTree = "<group>"; };
+		8863965F21510EF000E7B79D /* NSString+RTStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+RTStyle.m"; sourceTree = "<group>"; };
 		8864678021420A0600418223 /* InviteFriendsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InviteFriendsController.h; sourceTree = "<group>"; };
 		8864678121420A0600418223 /* InviteFriendsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InviteFriendsController.m; sourceTree = "<group>"; };
 		8864678321420BCA00418223 /* MyCouponController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCouponController.h; sourceTree = "<group>"; };
@@ -427,12 +451,13 @@
 		88345323213FE9B2002AAC62 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				8863965521510EF000E7B79D /* NSString */,
+				8863964E21510E8A00E7B79D /* UITextField */,
 				88345324213FE9B2002AAC62 /* BarCode */,
 				88345327213FE9B2002AAC62 /* Date */,
 				8834532A213FE9B2002AAC62 /* NSObject */,
 				8834532B213FE9B2002AAC62 /* NSObject+AddKeyValueToObject.h */,
 				8834532C213FE9B2002AAC62 /* NSObject+AddKeyValueToObject.m */,
-				8834532D213FE9B2002AAC62 /* NSString */,
 				88345332213FE9B2002AAC62 /* UDIDWrapper.h */,
 				88345333213FE9B2002AAC62 /* UDIDWrapper.m */,
 				88345334213FE9B2002AAC62 /* UIDevice+IdentifierAddition.h */,
@@ -474,17 +499,6 @@
 			children = (
 			);
 			path = NSObject;
-			sourceTree = "<group>";
-		};
-		8834532D213FE9B2002AAC62 /* NSString */ = {
-			isa = PBXGroup;
-			children = (
-				8834532E213FE9B2002AAC62 /* NSString+MD5Addition.h */,
-				8834532F213FE9B2002AAC62 /* NSString+MD5Addition.m */,
-				88345330213FE9B2002AAC62 /* NSString+RTStyle.h */,
-				88345331213FE9B2002AAC62 /* NSString+RTStyle.m */,
-			);
-			path = NSString;
 			sourceTree = "<group>";
 		};
 		88345336213FE9B2002AAC62 /* UIImage */ = {
@@ -543,8 +557,11 @@
 		88345356213FE9B3002AAC62 /* ApiService */ = {
 			isa = PBXGroup;
 			children = (
+				88639643215102F700E7B79D /* Model */,
 				88345357213FE9B3002AAC62 /* BaseApi.h */,
 				88345358213FE9B3002AAC62 /* BaseApi.m */,
+				886396402150A49800E7B79D /* HomeServiceApi.h */,
+				886396412150A49800E7B79D /* HomeServiceApi.m */,
 			);
 			path = ApiService;
 			sourceTree = "<group>";
@@ -637,6 +654,7 @@
 		883453BE213FE9E0002AAC62 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				8863964821510D5C00E7B79D /* Login */,
 				88B72D6F214657A0000AA461 /* ride */,
 				88B72D6E2146578E000AA461 /* unlock */,
 				884E4EE021410A85007448CF /* QrCode */,
@@ -781,6 +799,61 @@
 				884E4F0921412551007448CF /* HeadimageTableViewCell.m */,
 			);
 			path = Setting;
+			sourceTree = "<group>";
+		};
+		88639643215102F700E7B79D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				88639644215102FF00E7B79D /* Home */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		88639644215102FF00E7B79D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				886396462151032E00E7B79D /* LoginReq.h */,
+				886396452151032E00E7B79D /* LoginReq.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		8863964821510D5C00E7B79D /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				8863964B21510E3B00E7B79D /* LoginViewController.h */,
+				8863964C21510E3B00E7B79D /* LoginViewController.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		8863964E21510E8A00E7B79D /* UITextField */ = {
+			isa = PBXGroup;
+			children = (
+				8863964F21510E8A00E7B79D /* DPSwizzledMethod.h */,
+				8863965021510E8A00E7B79D /* DPSwizzledMethod.m */,
+				8863965121510E8A00E7B79D /* DPTextViewVerify.h */,
+				8863965221510E8A00E7B79D /* DPTextViewVerify.m */,
+			);
+			path = UITextField;
+			sourceTree = "<group>";
+		};
+		8863965521510EF000E7B79D /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+				8863965621510EF000E7B79D /* NSData+Ext.h */,
+				8863965721510EF000E7B79D /* NSData+Ext.m */,
+				8863965821510EF000E7B79D /* NSString+Ext.h */,
+				8863965921510EF000E7B79D /* NSString+Ext.m */,
+				8863965A21510EF000E7B79D /* NSString+MD5Addition.h */,
+				8863965B21510EF000E7B79D /* NSString+MD5Addition.m */,
+				8863965C21510EF000E7B79D /* NSString+Path.h */,
+				8863965D21510EF000E7B79D /* NSString+Path.m */,
+				8863965E21510EF000E7B79D /* NSString+RTStyle.h */,
+				8863965F21510EF000E7B79D /* NSString+RTStyle.m */,
+			);
+			name = NSString;
+			path = ../../../Psf/Psf/Category/NSString;
 			sourceTree = "<group>";
 		};
 		8864678F2142655F00418223 /* ZSSortSelectorView */ = {
@@ -1060,11 +1133,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8863965421510E8B00E7B79D /* DPTextViewVerify.m in Sources */,
 				883453B8213FE9B4002AAC62 /* BaseTableViewCell.m in Sources */,
 				883453A4213FE9B4002AAC62 /* BaseApi.m in Sources */,
 				884E4EDB21410528007448CF /* MessageViewController.m in Sources */,
 				883453A9213FE9B4002AAC62 /* UserBaseInfoModel.m in Sources */,
 				88B72D6421463A88000AA461 /* RideEndingController.m in Sources */,
+				8863966221510EF000E7B79D /* NSString+MD5Addition.m in Sources */,
 				8834538F213FE9B4002AAC62 /* CreatQRCodeAndBarCodeFromLeon.m in Sources */,
 				884E4EF221411245007448CF /* RechargeViewController.m in Sources */,
 				883453B3213FE9B4002AAC62 /* ImageUtils.m in Sources */,
@@ -1074,10 +1149,10 @@
 				884E4EE621410CCA007448CF /* LockPaytypeController.m in Sources */,
 				884E4F0321411292007448CF /* TradingDetailCell.m in Sources */,
 				88B72D7221466CCB000AA461 /* AboutController.m in Sources */,
+				8863966121510EF000E7B79D /* NSString+Ext.m in Sources */,
 				884E4EE321410A85007448CF /* ScanQrCodeController.m in Sources */,
 				884E4F0021411292007448CF /* PayTypeView.m in Sources */,
 				88B72D7521467687000AA461 /* AccountRulesController.m in Sources */,
-				88345392213FE9B4002AAC62 /* NSString+MD5Addition.m in Sources */,
 				88345399213FE9B4002AAC62 /* UIImage+RoundedCorner.m in Sources */,
 				883453B2213FE9B4002AAC62 /* FilePathManager.m in Sources */,
 				88345394213FE9B4002AAC62 /* UDIDWrapper.m in Sources */,
@@ -1088,10 +1163,13 @@
 				88345396213FE9B4002AAC62 /* AgentImageBaseModel.m in Sources */,
 				883453A5213FE9B4002AAC62 /* CLImageModel.m in Sources */,
 				884E4EDF21410599007448CF /* DetailMessageCell.m in Sources */,
+				886396472151032E00E7B79D /* LoginReq.m in Sources */,
+				886396422150A49800E7B79D /* HomeServiceApi.m in Sources */,
 				886467972142704600418223 /* ManuallyUnlockController.m in Sources */,
 				884E4F0B21412551007448CF /* HeadimageTableViewCell.m in Sources */,
 				88345395213FE9B4002AAC62 /* UIDevice+IdentifierAddition.m in Sources */,
 				884E4F0121411292007448CF /* RechargeBtn.m in Sources */,
+				8863964D21510E3B00E7B79D /* LoginViewController.m in Sources */,
 				88345390213FE9B4002AAC62 /* NSDate+Add.m in Sources */,
 				88B72D5B21463905000AA461 /* UnlockSuccessController.m in Sources */,
 				884E4ED22140F75C007448CF /* MineController.m in Sources */,
@@ -1118,11 +1196,14 @@
 				883453AA213FE9B4002AAC62 /* UserCacheBean.m in Sources */,
 				8864678E2142655B00418223 /* ZSScrollButton.m in Sources */,
 				8834539A213FE9B4002AAC62 /* UIImage+RTStyle.m in Sources */,
+				8863966021510EF000E7B79D /* NSData+Ext.m in Sources */,
 				883453A1213FE9B4002AAC62 /* NSArray+TYAFNetworking.m in Sources */,
+				8863965321510E8B00E7B79D /* DPSwizzledMethod.m in Sources */,
 				883453B5213FE9B4002AAC62 /* NSString+MoneyStyle.m in Sources */,
 				884E4F0E21412C9B007448CF /* SettingController.m in Sources */,
 				8834539F213FE9B4002AAC62 /* UIViewController+Loading.m in Sources */,
 				883453AF213FE9B4002AAC62 /* ZSURLResponse.m in Sources */,
+				8863966321510EF000E7B79D /* NSString+Path.m in Sources */,
 				88646788214214B200418223 /* CouponCell.m in Sources */,
 				883453C1213FEA14002AAC62 /* HomeController.m in Sources */,
 				88B72D6A21463CED000AA461 /* UnlockView.m in Sources */,
@@ -1136,6 +1217,7 @@
 				88B72D6721463B0E000AA461 /* TemporaryLockController.m in Sources */,
 				8864678B2142654B00418223 /* ZSSortSelectorView.m in Sources */,
 				884E4F1421413A19007448CF /* TripHeadView.m in Sources */,
+				8863966421510EF000E7B79D /* NSString+RTStyle.m in Sources */,
 				883453A3213FE9B4002AAC62 /* NSURLRequest+TYAFNetworking.m in Sources */,
 				884E4F0721412518007448CF /* MineInformationController.m in Sources */,
 				8834539E213FE9B4002AAC62 /* UserDefaultCashe.m in Sources */,
@@ -1144,7 +1226,6 @@
 				88B72D6D21464BC8000AA461 /* TripDetailHeadView.m in Sources */,
 				884E4F0221411292007448CF /* RechargeHeadView.m in Sources */,
 				883453AC213FE9B4002AAC62 /* ZSRequestCenter.m in Sources */,
-				88345393213FE9B4002AAC62 /* NSString+RTStyle.m in Sources */,
 				886467A421428C9F00418223 /* SubmitQuestionsController.m in Sources */,
 				8834539D213FE9B4002AAC62 /* UIViewController+Loading.m in Sources */,
 				883453BB213FE9B4002AAC62 /* PsfTabBarItem.m in Sources */,

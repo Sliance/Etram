@@ -10,6 +10,9 @@
 #import "ZSAPIProxy.h"
 #import "UserCacheBean.h"
 #import "ZSConfig.h"
+#define wx_login_url @"/ebike/member/mobile/v1/wxauto/login"
+#define phone_login_url @"/ebike/member/mobile/v1/phone/login"
+#define send_sms_url @"/ebike/member/mobile/v1/sendSms"
 typedef void(^responseModel)(id response);
 @interface BaseApi : NSObject
 + (void)requestAccountInfoModel:(responseModel ) response;
