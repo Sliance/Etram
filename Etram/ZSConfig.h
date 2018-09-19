@@ -28,7 +28,9 @@
 #import <YYKit.h>
 #import <MJExtension.h>
 #import "DPTextViewVerify.h"
-
+#import "UserCacheBean.h"
+#import "ZSNotification.h"
+#import "UILabel+String.h"
 
 
 #endif /* ZSConfig_h */

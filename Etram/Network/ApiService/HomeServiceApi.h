@@ -13,5 +13,6 @@
 + (instancetype)share;
 ///发送验证码
 -(void)sendVerCodeWithParam:(LoginReq *) req response:(responseModel) responseModel;
-
+///微信登录
+-(void)weChartLoginWithParam:(LoginReq *) req response:(responseModel) responseModel;
 @end

@@ -15,6 +15,7 @@
 #import "LockPaytypeController.h"
 #import "AppointHomeView.h"
 #import "EndRideController.h"
+#import "LoginViewController.h"
 
 @interface HomeController (){
     BOOL haveGetUserLocation;//是否获取到用户位置
@@ -155,7 +156,15 @@
     [self.view addSubview:self.appointView];
     [self reloadUI];
 }
-
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    if ([UserCacheBean share].userInfo.token.length>0) {
+        
+    }else{
+        LoginViewController *wechartVC = [[LoginViewController  alloc]init];
+        [self.navigationController pushViewController:wechartVC animated:YES];
+    }
+}
 -(void)reloadUI{
     [self.view addSubview:self.mineBtn];
     [self.view addSubview:self.arrowBtn];

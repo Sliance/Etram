@@ -80,6 +80,7 @@
 		884E4F0E21412C9B007448CF /* SettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 884E4F0D21412C9B007448CF /* SettingController.m */; };
 		884E4F1121412F38007448CF /* MineTripController.m in Sources */ = {isa = PBXBuildFile; fileRef = 884E4F1021412F38007448CF /* MineTripController.m */; };
 		884E4F1421413A19007448CF /* TripHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 884E4F1321413A19007448CF /* TripHeadView.m */; };
+		88612AA32152216600F1F3CA /* ZSNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 88612AA22152216600F1F3CA /* ZSNotification.m */; };
 		886396422150A49800E7B79D /* HomeServiceApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 886396412150A49800E7B79D /* HomeServiceApi.m */; };
 		886396472151032E00E7B79D /* LoginReq.m in Sources */ = {isa = PBXBuildFile; fileRef = 886396452151032E00E7B79D /* LoginReq.m */; };
 		8863964D21510E3B00E7B79D /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8863964C21510E3B00E7B79D /* LoginViewController.m */; };
@@ -283,6 +284,8 @@
 		884E4F1021412F38007448CF /* MineTripController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineTripController.m; sourceTree = "<group>"; };
 		884E4F1221413A19007448CF /* TripHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TripHeadView.h; sourceTree = "<group>"; };
 		884E4F1321413A19007448CF /* TripHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TripHeadView.m; sourceTree = "<group>"; };
+		88612AA12152216600F1F3CA /* ZSNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSNotification.h; sourceTree = "<group>"; };
+		88612AA22152216600F1F3CA /* ZSNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSNotification.m; sourceTree = "<group>"; };
 		886396402150A49800E7B79D /* HomeServiceApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeServiceApi.h; sourceTree = "<group>"; };
 		886396412150A49800E7B79D /* HomeServiceApi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeServiceApi.m; sourceTree = "<group>"; };
 		886396452151032E00E7B79D /* LoginReq.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginReq.m; sourceTree = "<group>"; };
@@ -902,6 +905,8 @@
 		88B72D4D21460E79000AA461 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				88612AA12152216600F1F3CA /* ZSNotification.h */,
+				88612AA22152216600F1F3CA /* ZSNotification.m */,
 				88B72D4E21460E90000AA461 /* UITextView */,
 			);
 			path = Tool;
@@ -1179,6 +1184,7 @@
 				884E4EFF21411292007448CF /* MineWalletCell.m in Sources */,
 				883453A2213FE9B4002AAC62 /* NSDictionary+TYAFNetworking.m in Sources */,
 				88B72D6121463A56000AA461 /* PaySuccessController.m in Sources */,
+				88612AA32152216600F1F3CA /* ZSNotification.m in Sources */,
 				886467A1214280C800418223 /* ServiceAlertView.m in Sources */,
 				883453B6213FE9B4002AAC62 /* UserCurrentLocationManager.m in Sources */,
 				8864678221420A0600418223 /* InviteFriendsController.m in Sources */,
@@ -1412,7 +1418,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.xingqige.Etram;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -1431,7 +1437,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.xingqige.Etram;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
