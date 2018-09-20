@@ -15,4 +15,8 @@
 -(void)sendVerCodeWithParam:(LoginReq *) req response:(responseModel) responseModel;
 ///微信登录
 -(void)weChartLoginWithParam:(LoginReq *) req response:(responseModel) responseModel;
+///注册登录校验
+-(void)requestLoginWithParam:(LoginReq *) req response:(responseModel) responseModel;
+
+
 @end

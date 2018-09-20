@@ -390,12 +390,21 @@
         return;
     }
     LoginReq *req = [[LoginReq alloc]init];
-    req.memberMobile = _phoneField.text;
+    req.phoneNumber = _phoneField.text;
     req.token = @"";
     req.timestamp = @"0";
     req.version = @"1.0.0";
-    req.appId = @"993335466657415169";
+    req.appId = @"997303469549645826";
     req.platform = @"ios";
+    req.wechatOpenId = @"";
+    req.wechatUnionId = @"";
+    req.memberName = @"";
+    req.memberAvatarPath = @"";
+    req.province = @"";
+    req.city = @"";
+    req.idCardNo = @"";
+    req.codeSendTime = @"";
+    req.ipAddress = @"0.0.0.0";
     __weak typeof(self)weakself = self;
     [[HomeServiceApi share]sendVerCodeWithParam:req response:^(id response) {
         if (response) {
@@ -415,26 +424,36 @@
         return;
     }
     LoginReq *req = [[LoginReq alloc]init];
-    req.memberMobile = _phoneField.text;
-    req.smsCaptchaCode = _codeField.text;
+    req.phoneNumber = _phoneField.text;
+    req.code = _codeField.text;
     req.token = @"";
     req.timestamp = @"0";
     req.version = @"1.0.0";
-    req.appId = @"993335466657415169";
+    req.appId = @"997303469549645826";
     req.platform = @"ios";
+    req.wechatOpenId = @"";
+    req.wechatUnionId = @"";
+    req.memberName = @"";
+    req.memberAvatarPath = @"";
+    req.province = @"";
+    req.city = @"";
+    req.idCardNo = @"";
+    req.codeSendTime = @"";
+    req.ipAddress = @"0.0.0.0";
+    req.sex = @"";
     __weak typeof(self)weakself = self;
-//    [[LoginServiceApi share]requestLoginWithParam:req response:^(id response) {
-//        if ([response[@"code"]integerValue] ==200 ) {
-//                NSError *error = nil;
-//                UserBaseInfoModel *userInfoModel = [MTLJSONAdapter modelOfClass:UserBaseInfoModel.class fromJSONDictionary:response[@"data"] error:&error];
-//                [UserCacheBean share].userInfo = userInfoModel;
+    [[HomeServiceApi share]requestLoginWithParam:req response:^(id response) {
+        if ([response[@"code"]integerValue] ==200 ) {
+                NSError *error = nil;
+                UserBaseInfoModel *userInfoModel = [MTLJSONAdapter modelOfClass:UserBaseInfoModel.class fromJSONDictionary:response[@"data"] error:&error];
+                [UserCacheBean share].userInfo = userInfoModel;
 //                [ZSNotification postRefreshLocationResultNotification:nil];
-//                [weakself.navigationController popViewControllerAnimated:YES];
-//
-//        }else{
-//            [self showToast:response[@"message"]];
-//        }
-//    }];
+                [weakself.navigationController popViewControllerAnimated:YES];
+
+        }else{
+            [self showToast:response[@"message"]];
+        }
+    }];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

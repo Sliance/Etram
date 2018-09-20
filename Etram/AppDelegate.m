@@ -216,11 +216,11 @@
                 NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
                 NSLog(@"%@",dic);
                 LoginReq *req = [[LoginReq alloc]init];
-                req.memberArea = dic[@"city"];
-                req.nickname = dic[@"nickname"];
+                req.city = dic[@"city"];
+                req.memberName = dic[@"nickname"];
                 req.avatar = dic[@"headimgurl"];
-                req.memberGender = dic[@"sex"];
-                req.appOpenId = dic[@"openid"];
+                req.sex = dic[@"sex"];
+                req.wechatOpenId = dic[@"openid"];
                 req.wechatUnionId = dic[@"unionid"];
                 req.appId = @"993335466657415169";
                 req.timestamp = @"529675086";
@@ -234,11 +234,9 @@
                 }else{
                     req.openId = @"";
                     req.memberEmail = @"";
-                    req.memberMobile = @"";
+                    req.phoneNumber = @"";
                     req.memberBirthday = @"";
-                    req.memberPassword = @"";
-                    req.memberAvatarId = @"";
-                    req.memberAccount = @"";
+                    req.memberAvatarPath = @"";
                     req.token = @"";
                     [self weChartLogin:req];
                 }

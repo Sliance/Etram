@@ -17,39 +17,41 @@
 @property(nonatomic,strong)NSString *platform;
 ///时间戳
 @property(nonatomic,copy)NSString *timestamp;
+@property(nonatomic,copy)NSString *ipAddress;
 
 @property(nonatomic,copy)NSString *version;
 ///验证码
-@property(nonatomic,copy)NSString *smsCaptchaCode;
+@property(nonatomic,copy)NSString *code;
 ///手机号
-@property(nonatomic,copy)NSString *memberMobile;
-///密码
-@property(nonatomic,copy)NSString *memberPassword;
+@property(nonatomic,copy)NSString *phoneNumber;
+///验证码发送时间,yyyy-MM-dd HH:mm:ss
+@property(nonatomic,copy)NSString *codeSendTime;
+
 /*
  微信登录
  */
 ///openid
-@property(nonatomic,copy)NSString *appOpenId;
+@property(nonatomic,copy)NSString *wechatOpenId;
 ///
-@property(nonatomic,copy)NSString *memberAccount;
+@property(nonatomic,copy)NSString *province;
 ///地区
-@property(nonatomic,copy)NSString *memberArea;
+@property(nonatomic,copy)NSString *city;
 ///小程序传的openid
 @property(nonatomic,copy)NSString *openId;
 ///头像
 @property(nonatomic,copy)NSString *avatar;
 ///昵称
-@property(nonatomic,copy)NSString *nickname;
+@property(nonatomic,copy)NSString *memberName;
 //UnionId
 @property(nonatomic,copy)NSString *wechatUnionId;
 ///邮箱
 @property(nonatomic,copy)NSString *memberEmail;
 ///
-@property(nonatomic,copy)NSString *memberAvatarId;
+@property(nonatomic,copy)NSString *memberAvatarPath;
 ///性别
-@property(nonatomic,copy)NSString *memberGender;
+@property(nonatomic,copy)NSString *sex;
 ///生日
 @property(nonatomic,copy)NSString *memberBirthday;
-///会员id
-@property(nonatomic,copy)NSString *memberId;
+///身份证号
+@property(nonatomic,copy)NSString *idCardNo;
 @end

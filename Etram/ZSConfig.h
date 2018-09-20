@@ -10,7 +10,7 @@
 #define ZSConfig_h
 #define APPNAME @"Shh"
 #define SUPPLIERAPIKEY @"ShhAppApiKey"
-#define DPHOST @"192.168.1.153:8088"//测试环境
+#define DPHOST @"http://192.168.1.153:8088"//测试环境
 //#define DPHOST @"https://api.mikaebike.com"// 生产环境
 
 #define IMAGEHOST  @"https://xcxmmeida.lxnong.com/"//图片地址
