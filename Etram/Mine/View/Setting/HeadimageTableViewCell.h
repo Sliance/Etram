@@ -7,11 +7,11 @@
 //
 
 #import "BaseTableViewCell.h"
-//#import "MineInformationReq.h"
+#import "MineInformationReq.h"
 
 @interface HeadimageTableViewCell : BaseTableViewCell
 @property(nonatomic,strong)UILabel *titleLabel;
 @property(nonatomic,strong)UILabel *detailLabel;
 @property(nonatomic,strong)UIImageView *headImage;
-//@property(nonatomic,strong)MineInformationReq *result;
+@property(nonatomic,strong)MineInformationReq *result;
 @end

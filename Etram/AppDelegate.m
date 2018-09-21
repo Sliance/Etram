@@ -218,7 +218,7 @@
                 LoginReq *req = [[LoginReq alloc]init];
                 req.city = dic[@"city"];
                 req.memberName = dic[@"nickname"];
-                req.avatar = dic[@"headimgurl"];
+                req.memberAvatarPath = dic[@"headimgurl"];
                 req.sex = dic[@"sex"];
                 req.wechatOpenId = dic[@"openid"];
                 req.wechatUnionId = dic[@"unionid"];
@@ -232,10 +232,10 @@
                     
 //                    [self bindWX:req];
                 }else{
-                    req.openId = @"";
+                    
                     req.memberEmail = @"";
                     req.phoneNumber = @"";
-                    req.memberBirthday = @"";
+                    
                     req.memberAvatarPath = @"";
                     req.token = @"";
                     [self weChartLogin:req];

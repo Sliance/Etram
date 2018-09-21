@@ -31,6 +31,6 @@
 #import "UserCacheBean.h"
 #import "ZSNotification.h"
 #import "UILabel+String.h"
-
+#import <UIImageView+WebCache.h>
 
 #endif /* ZSConfig_h */

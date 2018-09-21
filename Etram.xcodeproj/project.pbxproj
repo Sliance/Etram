@@ -102,6 +102,9 @@
 		8864679D21427F1D00418223 /* DecodSuccessController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8864679C21427F1D00418223 /* DecodSuccessController.m */; };
 		886467A1214280C800418223 /* ServiceAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 886467A0214280C800418223 /* ServiceAlertView.m */; };
 		886467A421428C9F00418223 /* SubmitQuestionsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 886467A321428C9F00418223 /* SubmitQuestionsController.m */; };
+		8873D6352154870F00C48F0E /* MineServiceApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 8873D6342154870F00C48F0E /* MineServiceApi.m */; };
+		8873D63C215488DD00C48F0E /* MineInformationReq.m in Sources */ = {isa = PBXBuildFile; fileRef = 8873D63B215488DD00C48F0E /* MineInformationReq.m */; };
+		8873D63F2154924000C48F0E /* BaseModelReq.m in Sources */ = {isa = PBXBuildFile; fileRef = 8873D63E2154924000C48F0E /* BaseModelReq.m */; };
 		888AC08221479ABF0030BC12 /* UserAgreementController.m in Sources */ = {isa = PBXBuildFile; fileRef = 888AC08121479ABF0030BC12 /* UserAgreementController.m */; };
 		88B72D5121460E90000AA461 /* UIPlaceHolderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B72D5021460E90000AA461 /* UIPlaceHolderTextView.m */; };
 		88B72D58214638EA000AA461 /* UnlockingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B72D57214638EA000AA461 /* UnlockingController.m */; };
@@ -328,6 +331,12 @@
 		886467A0214280C800418223 /* ServiceAlertView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ServiceAlertView.m; sourceTree = "<group>"; };
 		886467A221428C9F00418223 /* SubmitQuestionsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubmitQuestionsController.h; sourceTree = "<group>"; };
 		886467A321428C9F00418223 /* SubmitQuestionsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubmitQuestionsController.m; sourceTree = "<group>"; };
+		8873D6332154870F00C48F0E /* MineServiceApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineServiceApi.h; sourceTree = "<group>"; };
+		8873D6342154870F00C48F0E /* MineServiceApi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineServiceApi.m; sourceTree = "<group>"; };
+		8873D63A215488DD00C48F0E /* MineInformationReq.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineInformationReq.h; sourceTree = "<group>"; };
+		8873D63B215488DD00C48F0E /* MineInformationReq.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineInformationReq.m; sourceTree = "<group>"; };
+		8873D63D2154924000C48F0E /* BaseModelReq.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseModelReq.h; sourceTree = "<group>"; };
+		8873D63E2154924000C48F0E /* BaseModelReq.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseModelReq.m; sourceTree = "<group>"; };
 		888AC08021479ABF0030BC12 /* UserAgreementController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserAgreementController.h; sourceTree = "<group>"; };
 		888AC08121479ABF0030BC12 /* UserAgreementController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserAgreementController.m; sourceTree = "<group>"; };
 		88B72D4F21460E90000AA461 /* UIPlaceHolderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIPlaceHolderTextView.h; sourceTree = "<group>"; };
@@ -565,6 +574,8 @@
 				88345358213FE9B3002AAC62 /* BaseApi.m */,
 				886396402150A49800E7B79D /* HomeServiceApi.h */,
 				886396412150A49800E7B79D /* HomeServiceApi.m */,
+				8873D6332154870F00C48F0E /* MineServiceApi.h */,
+				8873D6342154870F00C48F0E /* MineServiceApi.m */,
 			);
 			path = ApiService;
 			sourceTree = "<group>";
@@ -807,7 +818,10 @@
 		88639643215102F700E7B79D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8873D639215488C600C48F0E /* Mine */,
 				88639644215102FF00E7B79D /* Home */,
+				8873D63D2154924000C48F0E /* BaseModelReq.h */,
+				8873D63E2154924000C48F0E /* BaseModelReq.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -900,6 +914,15 @@
 				886467A0214280C800418223 /* ServiceAlertView.m */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		8873D639215488C600C48F0E /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				8873D63A215488DD00C48F0E /* MineInformationReq.h */,
+				8873D63B215488DD00C48F0E /* MineInformationReq.m */,
+			);
+			path = Mine;
 			sourceTree = "<group>";
 		};
 		88B72D4D21460E79000AA461 /* Tool */ = {
@@ -1157,6 +1180,7 @@
 				8863966121510EF000E7B79D /* NSString+Ext.m in Sources */,
 				884E4EE321410A85007448CF /* ScanQrCodeController.m in Sources */,
 				884E4F0021411292007448CF /* PayTypeView.m in Sources */,
+				8873D6352154870F00C48F0E /* MineServiceApi.m in Sources */,
 				88B72D7521467687000AA461 /* AccountRulesController.m in Sources */,
 				88345399213FE9B4002AAC62 /* UIImage+RoundedCorner.m in Sources */,
 				883453B2213FE9B4002AAC62 /* FilePathManager.m in Sources */,
@@ -1215,6 +1239,8 @@
 				88B72D6A21463CED000AA461 /* UnlockView.m in Sources */,
 				8864679421426FBB00418223 /* SYBoxTextField.m in Sources */,
 				883453B0213FE9B4002AAC62 /* DeviceModel.m in Sources */,
+				8873D63F2154924000C48F0E /* BaseModelReq.m in Sources */,
+				8873D63C215488DD00C48F0E /* MineInformationReq.m in Sources */,
 				883452F2213FCBE1002AAC62 /* AppDelegate.m in Sources */,
 				884E4EF321411245007448CF /* TradingDetailController.m in Sources */,
 				883453B4213FE9B4002AAC62 /* NSString+Hash.m in Sources */,

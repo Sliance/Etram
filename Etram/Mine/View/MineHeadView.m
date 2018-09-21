@@ -8,6 +8,7 @@
 
 #import "MineHeadView.h"
 
+
 @implementation MineHeadView
 
 -(UIButton *)headbtn{
@@ -79,25 +80,26 @@
     self.skipBlock(1);
 }
 
-//-(void)setResult:(MineInformationReq *)result{
-//    _result = result;
-//    UIImageView *image = [[UIImageView alloc]init];
-//    if (result.memberAvatarPath.length>0) {
-//        [self.headbtn setBackgroundImageWithURL:[NSURL URLWithString:result.memberAvatarPath] forState:UIControlStateNormal options:YYWebImageOptionAllowBackgroundTask];
-//    }else{
-//         [_headbtn setBackgroundImage:[UIImage imageNamed:@"mine_avater_70"] forState:UIControlStateNormal];
-//    }
-//    [image sd_setImageWithURL:[NSURL URLWithString:result.memberAvatarPath]];
-//    
-//    if([UserCacheBean share].userInfo.token.length<1){
-//        self.nameLabel.text = @"登录/注册";
-//        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tologin)];
-//        self.nameLabel.userInteractionEnabled = YES;
-//        [self.nameLabel addGestureRecognizer:tap];
-//    }else{
-//       self.nameLabel.text = result.memberNickName;
-//    }
-//}
+-(void)setResult:(MineInformationReq *)result{
+    _result = result;
+    UIImageView *image = [[UIImageView alloc]init];
+    if (result.memberAvatarPath.length>0) {
+        [self.headbtn setBackgroundImageWithURL:[NSURL URLWithString:result.memberAvatarPath] forState:UIControlStateNormal options:YYWebImageOptionAllowBackgroundTask];
+    }else{
+         [_headbtn setBackgroundImage:[UIImage imageNamed:@"mine_avater_70"] forState:UIControlStateNormal];
+    }
+    [image sd_setImageWithURL:[NSURL URLWithString:result.memberAvatarPath]];
+    
+    if([UserCacheBean share].userInfo.token.length<1){
+        self.nameLabel.text = @"登录/注册";
+        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tologin)];
+        self.nameLabel.userInteractionEnabled = YES;
+        [self.nameLabel addGestureRecognizer:tap];
+    }else{
+       self.nameLabel.text = result.memberName;
+        self.numLabel.text = [NSString stringWithFormat:@"%@积分",result.score];
+    }
+}
 -(void)tologin{
     self.tologinBlock();
 }

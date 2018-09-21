@@ -393,7 +393,7 @@
     req.phoneNumber = _phoneField.text;
     req.token = @"";
     req.timestamp = @"0";
-    req.version = @"1.0.0";
+    req.systemVersion = @"1.0.0";
     req.appId = @"997303469549645826";
     req.platform = @"ios";
     req.wechatOpenId = @"";
@@ -428,7 +428,7 @@
     req.code = _codeField.text;
     req.token = @"";
     req.timestamp = @"0";
-    req.version = @"1.0.0";
+    req.systemVersion = @"1.0.0";
     req.appId = @"997303469549645826";
     req.platform = @"ios";
     req.wechatOpenId = @"";

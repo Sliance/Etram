@@ -49,7 +49,7 @@
         _titleLabel.font = [UIFont boldSystemFontOfSize:18];
         _titleLabel.textColor = DSColorFromHex(0x323232);
         _titleLabel.textAlignment = NSTextAlignmentLeft;
-        _titleLabel.text = @"157****6822";
+       
     }
     return _titleLabel;
 }
@@ -59,7 +59,7 @@
         _detailLabel.font = [UIFont systemFontOfSize:15];
         _detailLabel.textColor = DSColorFromHex(0x323232);
         _detailLabel.textAlignment = NSTextAlignmentLeft;
-        _detailLabel.text = @"积分 3462";
+        
     }
     return _detailLabel;
 }
@@ -73,10 +73,11 @@
     return _headImage;
 }
 
-//-(void)setResult:(MineInformationReq *)result{
-//    _result = result;
-//    
-//    [_headImage sd_setImageWithURL:[NSURL URLWithString:result.memberAvatarPath]placeholderImage:[UIImage imageNamed:@"mine_avater_55"]];
-//    
-//}
+-(void)setResult:(MineInformationReq *)result{
+    _result = result;
+    
+    [_headImage sd_setImageWithURL:[NSURL URLWithString:result.memberAvatarPath]placeholderImage:[UIImage imageNamed:@"mine_avater_55"]];
+    self.detailLabel.text = [NSString stringWithFormat:@"积分 %@",result.score];
+     _titleLabel.text = result.memberName;
+}
 @end

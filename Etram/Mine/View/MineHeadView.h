@@ -7,7 +7,7 @@
 //
 
 #import "BaseView.h"
-//#import "MineInformationReq.h"
+#import "MineInformationReq.h"
 
 @interface MineHeadView : BaseView
 @property(nonatomic,strong)UIButton *headbtn;
@@ -15,7 +15,7 @@
 @property(nonatomic,strong)UILabel *numLabel;
 //@property(nonatomic,strong)UILabel *lineLabel;
 @property (nonatomic, copy) void(^skipBlock)(NSInteger);
-//@property(nonatomic,strong)MineInformationReq *result;
+@property(nonatomic,strong)MineInformationReq *result;
 @property(nonatomic,copy)void (^tologinBlock)();
 
 @end

@@ -19,7 +19,7 @@
 @property(nonatomic,copy)NSString *timestamp;
 @property(nonatomic,copy)NSString *ipAddress;
 
-@property(nonatomic,copy)NSString *version;
+@property(nonatomic,copy)NSString *systemVersion;
 ///验证码
 @property(nonatomic,copy)NSString *code;
 ///手机号
@@ -36,10 +36,7 @@
 @property(nonatomic,copy)NSString *province;
 ///地区
 @property(nonatomic,copy)NSString *city;
-///小程序传的openid
-@property(nonatomic,copy)NSString *openId;
-///头像
-@property(nonatomic,copy)NSString *avatar;
+
 ///昵称
 @property(nonatomic,copy)NSString *memberName;
 //UnionId
@@ -50,8 +47,7 @@
 @property(nonatomic,copy)NSString *memberAvatarPath;
 ///性别
 @property(nonatomic,copy)NSString *sex;
-///生日
-@property(nonatomic,copy)NSString *memberBirthday;
+
 ///身份证号
 @property(nonatomic,copy)NSString *idCardNo;
 @end

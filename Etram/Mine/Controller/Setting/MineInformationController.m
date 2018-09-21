@@ -9,7 +9,7 @@
 #import "MineInformationController.h"
 #import "HeadimageTableViewCell.h"
 
-//#import "MineServiceApi.h"
+#import "MineServiceApi.h"
 //#import "UploadImageTool.h"
 #import "UIImage+Resize.h"
 
@@ -21,6 +21,8 @@
 
 @property(nonatomic,strong)NSMutableArray *imageArr;
 @property(nonatomic,strong)UITextField *nameField;
+
+@property(nonatomic,strong)MineInformationReq *result;
 @end
 
 @implementation MineInformationController
@@ -55,9 +57,24 @@
    
     _dataArr = @[@"头像",@"昵称",@"性别",@"生日"];
     _imageArr = [NSMutableArray array];
-    
+    [self requestData];
 }
-
+-(void)requestData{
+    BaseModelReq *req = [[BaseModelReq alloc]init];
+    req.token = [UserCacheBean share].userInfo.token;
+    req.timestamp = @"0";
+    req.appId = @"997303469549645826";
+    req.platform = @"ios";
+    self.result = [[MineInformationReq alloc]init];
+    __weak typeof(self)weakself = self;
+    [[MineServiceApi share]getMemberInformationWithParam:req response:^(id response) {
+        if (response) {
+            
+            weakself.result = response;
+            [weakself.tableview reloadData];
+        }
+    }];
+}
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 3;
 }
@@ -95,7 +112,7 @@
         if (!cell) {
             cell = [[HeadimageTableViewCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:identify];
         }
-//        [cell setResult:self.result];
+        [cell setResult:self.result];
         return cell;
     }
     static NSString *identify = @"identify";
@@ -114,23 +131,28 @@
     if (indexPath.section ==1) {
         if (indexPath.row ==0) {
             cell.textLabel.text = @"昵称";
-            cell.detailTextLabel.text = @"157****6822";
+            cell.detailTextLabel.text = self.result.memberName;
             cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
         }else if (indexPath.row==1){
             cell.textLabel.text = @"姓名";
-            cell.detailTextLabel.text = @"杜月笙";
+            cell.detailTextLabel.text = self.result.memberName;
         }else{
             cell.textLabel.text = @"实名认证";
-            cell.detailTextLabel.text = @"已认证";
+            if (self.result.idCardNo.length>0) {
+                cell.detailTextLabel.text = @"已认证";
+            }else{
+                cell.detailTextLabel.text = @"未认证";
+            }
+            
         }
     }else if (indexPath.section ==2){
         if (indexPath.row ==0) {
             cell.textLabel.text = @"手机号";
-            cell.detailTextLabel.text = @"157****6822";
+            cell.detailTextLabel.text = self.result.phoneNumber;
            
         }else if (indexPath.row==1){
             cell.textLabel.text = @"微信";
-            cell.detailTextLabel.text = @"杜月笙";
+            cell.detailTextLabel.text = self.result.memberName;
             cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
         }
     }

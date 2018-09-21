@@ -17,6 +17,7 @@
 #import "MyCouponController.h"
 #import "ServiceAlertView.h"
 #import "SubmitQuestionsController.h"
+#import "MineServiceApi.h"
 
 @interface MineController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,strong)UITableView *tableview;
@@ -24,6 +25,7 @@
 @property(nonatomic,strong)NSArray *dataArr;
 @property(nonatomic,strong)MineHeadView *headView;
 @property(nonatomic,strong)ServiceAlertView *serviceView;
+@property(nonatomic,strong)MineInformationReq *result;
 @end
 
 @implementation MineController
@@ -91,6 +93,24 @@
     [self.serviceView setTapBlock:^(NSInteger index) {
         weakself.serviceView.hidden = YES;
     }];
+    [self requestData];
+}
+
+-(void)requestData{
+    BaseModelReq *req = [[BaseModelReq alloc]init];
+    req.token = [UserCacheBean share].userInfo.token;
+    req.timestamp = @"0";
+    req.appId = @"997303469549645826";
+    req.platform = @"ios";
+    self.result = [[MineInformationReq alloc]init];
+    __weak typeof(self)weakself = self;
+    [[MineServiceApi share]getMemberInformationWithParam:req response:^(id response) {
+        if (response) {
+            [weakself.headView setResult:response];
+            weakself.result = response;
+            [weakself.tableview reloadData];
+        }
+    }];
 }
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 1;
@@ -122,9 +142,9 @@
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     if (indexPath.row ==1) {
-        cell.detailTextLabel.text = @"176元";
+        cell.detailTextLabel.text = [NSString stringWithFormat:@"%@元",self.result.accountBalance];
     }else if (indexPath.row ==2){
-        cell.detailTextLabel.text = @"共29.6公里";
+        cell.detailTextLabel.text = [NSString stringWithFormat:@"共%@公里",self.result.routeDistance];
     }
     return cell;
 }
