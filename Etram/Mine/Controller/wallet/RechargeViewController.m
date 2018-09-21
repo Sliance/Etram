@@ -10,7 +10,7 @@
 #import "RechargeHeadView.h"
 
 #import "PayTypeView.h"
-
+#import "MineServiceApi.h"
 
 
 @interface RechargeViewController ()<UIScrollViewDelegate>
@@ -113,13 +113,23 @@
         
     }];
     _dataArr = [NSMutableArray array];
-    _dataArr = [NSMutableArray arrayWithObjects:@"1",@"2",@"3",@"4", nil];
-    [self.headView setDataArr:_dataArr];
-    [self reloadData];
+    [self requestData];
 }
 
 -(void)requestData{
-    
+    BaseModelReq *req = [[BaseModelReq alloc]init];
+    req.appId = @"993335466657415169";
+    req.timestamp = @"529675086";
+    req.token = [UserCacheBean share].userInfo.token;
+    req.platform = @"ios";
+    __weak typeof(self)weakself = self;
+    [[MineServiceApi share]rechargeMemberBalanceWithParam:req response:^(id response) {
+        if (response) {
+            [weakself.dataArr removeAllObjects];
+            [weakself.dataArr addObjectsFromArray:response];
+            [weakself reloadData];
+        }
+    }];
 }
 -(void)reloadData{
     [self.headView setDataArr:self.dataArr];

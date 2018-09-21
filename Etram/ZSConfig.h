@@ -32,5 +32,5 @@
 #import "ZSNotification.h"
 #import "UILabel+String.h"
 #import <UIImageView+WebCache.h>
-
+#import <MJRefresh.h>
 #endif /* ZSConfig_h */

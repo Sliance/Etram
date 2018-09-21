@@ -32,9 +32,12 @@
 @property(nonatomic,strong)UILabel *xieyiLabel;
 @property(nonatomic,strong)UIButton* xieyiBtn;
 
-
 @property(nonatomic,strong)NSTimer* timer;
 @property(nonatomic,assign)NSInteger count;
+@property(nonatomic,assign)BOOL isSelected;
+
+
+
 @end
 
 @implementation LoginViewController
@@ -423,6 +426,10 @@
         [self showToast:@"请输入验证码"];
         return;
     }
+    if (_isSelected ==NO) {
+        [self showInfo:@"请同意服务条款"];
+        return;
+    }
     LoginReq *req = [[LoginReq alloc]init];
     req.phoneNumber = _phoneField.text;
     req.code = _codeField.text;
@@ -495,6 +502,7 @@
 }
 -(void)pressXY:(UIButton*)sender{
     sender.selected = !sender.selected;
+    _isSelected = sender.selected;
 }
 - (void)getAuthWithUserInfoFromWechat
 {

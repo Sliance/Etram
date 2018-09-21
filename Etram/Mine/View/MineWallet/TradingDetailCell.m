@@ -52,7 +52,7 @@
         _titleLabel.font = [UIFont boldSystemFontOfSize:15];
         _titleLabel.textColor = DSColorFromHex(0x323232);
         _titleLabel.textAlignment = NSTextAlignmentLeft;
-        _titleLabel.text = @"充值余额";
+        _titleLabel.text = @"";
     }
     return _titleLabel;
 }
@@ -62,7 +62,7 @@
         _contentLabel.font = [UIFont systemFontOfSize:12];
         _contentLabel.textColor = DSColorFromHex(0x979797);
         _contentLabel.textAlignment = NSTextAlignmentLeft;
-        _contentLabel.text = @"2018-05-23";
+        _contentLabel.text = @"";
     }
     return _contentLabel;
 }
@@ -72,12 +72,17 @@
         _priceLabel.font = [UIFont boldSystemFontOfSize: 18];
         _priceLabel.textColor = DSColorFromHex(0x5AC72F);
         _priceLabel.textAlignment = NSTextAlignmentLeft;
-        _priceLabel.text = @"+1000.0";
+        _priceLabel.text = @"";
     }
     return _priceLabel;
 }
 -(void)setType:(NSInteger)type{
     _type = type;
 }
-
+-(void)setModel:(IntegralRecord *)model{
+    self.titleLabel.text = model.transactionType;
+    self.priceLabel.text = model.moneyChange;
+    self.contentLabel.text = model.systemUpdateTime;
+    
+}
 @end

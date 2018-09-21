@@ -11,14 +11,14 @@
 #import "TradingDetailController.h"
 #import "RechargeViewController.h"
 #import "MyIntegralController.h"
-
+#import "MineServiceApi.h"
 
 @interface MineWalletViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property(nonatomic,strong)UITableView *tableview;
 @property(nonatomic,strong)UIButton *detailBtn;
 @property(nonatomic,strong)NSMutableDictionary *resultDic;
-
+@property(nonatomic,strong)MineInformationReq *result;
 @end
 
 @implementation MineWalletViewController
@@ -68,6 +68,23 @@
     UIImageView *headImage = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, SCREENWIDTH, 150)];
     headImage.image = [UIImage imageNamed:@"wallet_banner"];
     self.tableview.tableHeaderView = headImage;
+    [self requestData];
+}
+-(void)requestData{
+    BaseModelReq *req = [[BaseModelReq alloc]init];
+    req.token = [UserCacheBean share].userInfo.token;
+    req.timestamp = @"0";
+    req.appId = @"997303469549645826";
+    req.platform = @"ios";
+    self.result = [[MineInformationReq alloc]init];
+    __weak typeof(self)weakself = self;
+    [[MineServiceApi share]getMemberInformationWithParam:req response:^(id response) {
+        if (response) {
+           
+            weakself.result = response;
+            [weakself.tableview reloadData];
+        }
+    }];
 }
 
 
@@ -99,18 +116,18 @@
         if (indexPath.row ==0) {
         cell.titleLabel.text = @"骑行余额";
         cell.contentLabel.text = @"";
-        cell.priceLabel.text = @"20.0元";
+        cell.priceLabel.text = [NSString stringWithFormat:@"%@元",self.result.accountBalance];
         cell.rechargeBtn.hidden = NO;
         
         }else if (indexPath.row ==1){
             cell.titleLabel.text = @"我的积分";
             cell.contentLabel.text = @"";
-            cell.priceLabel.text = @"325";
+            cell.priceLabel.text = self.result.score;
              cell.rechargeBtn.hidden = YES;
         }else if (indexPath.row ==2){
             cell.titleLabel.text = @"我的红包";
             cell.contentLabel.text = @"";
-            cell.priceLabel.text = @"30.0元";
+            cell.priceLabel.text = [NSString stringWithFormat:@"%@元",self.result.redEnvelope];
              cell.rechargeBtn.hidden = YES;
         }
     __weak typeof(self)weakSelf = self;

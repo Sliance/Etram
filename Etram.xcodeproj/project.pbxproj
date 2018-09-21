@@ -105,6 +105,11 @@
 		8873D6352154870F00C48F0E /* MineServiceApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 8873D6342154870F00C48F0E /* MineServiceApi.m */; };
 		8873D63C215488DD00C48F0E /* MineInformationReq.m in Sources */ = {isa = PBXBuildFile; fileRef = 8873D63B215488DD00C48F0E /* MineInformationReq.m */; };
 		8873D63F2154924000C48F0E /* BaseModelReq.m in Sources */ = {isa = PBXBuildFile; fileRef = 8873D63E2154924000C48F0E /* BaseModelReq.m */; };
+		8873D6422154BC0900C48F0E /* RechargeRuleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8873D6412154BC0800C48F0E /* RechargeRuleModel.m */; };
+		8873D6452154C22300C48F0E /* MineMessageListRes.m in Sources */ = {isa = PBXBuildFile; fileRef = 8873D6442154C22300C48F0E /* MineMessageListRes.m */; };
+		8873D6482154C61E00C48F0E /* EmptyShoppingHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8873D6472154C61E00C48F0E /* EmptyShoppingHeadView.m */; };
+		8873D64B2154E82D00C48F0E /* IntegralRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 8873D6492154E82D00C48F0E /* IntegralRecord.m */; };
+		8873D6512154FBB200C48F0E /* CyclingReq.m in Sources */ = {isa = PBXBuildFile; fileRef = 8873D6502154FBB200C48F0E /* CyclingReq.m */; };
 		888AC08221479ABF0030BC12 /* UserAgreementController.m in Sources */ = {isa = PBXBuildFile; fileRef = 888AC08121479ABF0030BC12 /* UserAgreementController.m */; };
 		88B72D5121460E90000AA461 /* UIPlaceHolderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B72D5021460E90000AA461 /* UIPlaceHolderTextView.m */; };
 		88B72D58214638EA000AA461 /* UnlockingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B72D57214638EA000AA461 /* UnlockingController.m */; };
@@ -337,6 +342,16 @@
 		8873D63B215488DD00C48F0E /* MineInformationReq.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineInformationReq.m; sourceTree = "<group>"; };
 		8873D63D2154924000C48F0E /* BaseModelReq.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseModelReq.h; sourceTree = "<group>"; };
 		8873D63E2154924000C48F0E /* BaseModelReq.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseModelReq.m; sourceTree = "<group>"; };
+		8873D6402154BC0800C48F0E /* RechargeRuleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RechargeRuleModel.h; sourceTree = "<group>"; };
+		8873D6412154BC0800C48F0E /* RechargeRuleModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RechargeRuleModel.m; sourceTree = "<group>"; };
+		8873D6432154C22200C48F0E /* MineMessageListRes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineMessageListRes.h; sourceTree = "<group>"; };
+		8873D6442154C22300C48F0E /* MineMessageListRes.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineMessageListRes.m; sourceTree = "<group>"; };
+		8873D6462154C61E00C48F0E /* EmptyShoppingHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmptyShoppingHeadView.h; sourceTree = "<group>"; };
+		8873D6472154C61E00C48F0E /* EmptyShoppingHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmptyShoppingHeadView.m; sourceTree = "<group>"; };
+		8873D6492154E82D00C48F0E /* IntegralRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntegralRecord.m; sourceTree = "<group>"; };
+		8873D64A2154E82D00C48F0E /* IntegralRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntegralRecord.h; sourceTree = "<group>"; };
+		8873D64F2154FBB200C48F0E /* CyclingReq.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CyclingReq.h; sourceTree = "<group>"; };
+		8873D6502154FBB200C48F0E /* CyclingReq.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CyclingReq.m; sourceTree = "<group>"; };
 		888AC08021479ABF0030BC12 /* UserAgreementController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserAgreementController.h; sourceTree = "<group>"; };
 		888AC08121479ABF0030BC12 /* UserAgreementController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserAgreementController.m; sourceTree = "<group>"; };
 		88B72D4F21460E90000AA461 /* UIPlaceHolderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIPlaceHolderTextView.h; sourceTree = "<group>"; };
@@ -831,6 +846,8 @@
 			children = (
 				886396462151032E00E7B79D /* LoginReq.h */,
 				886396452151032E00E7B79D /* LoginReq.m */,
+				8873D64F2154FBB200C48F0E /* CyclingReq.h */,
+				8873D6502154FBB200C48F0E /* CyclingReq.m */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -921,6 +938,12 @@
 			children = (
 				8873D63A215488DD00C48F0E /* MineInformationReq.h */,
 				8873D63B215488DD00C48F0E /* MineInformationReq.m */,
+				8873D6402154BC0800C48F0E /* RechargeRuleModel.h */,
+				8873D6412154BC0800C48F0E /* RechargeRuleModel.m */,
+				8873D6432154C22200C48F0E /* MineMessageListRes.h */,
+				8873D6442154C22300C48F0E /* MineMessageListRes.m */,
+				8873D64A2154E82D00C48F0E /* IntegralRecord.h */,
+				8873D6492154E82D00C48F0E /* IntegralRecord.m */,
 			);
 			path = Mine;
 			sourceTree = "<group>";
@@ -930,6 +953,8 @@
 			children = (
 				88612AA12152216600F1F3CA /* ZSNotification.h */,
 				88612AA22152216600F1F3CA /* ZSNotification.m */,
+				8873D6462154C61E00C48F0E /* EmptyShoppingHeadView.h */,
+				8873D6472154C61E00C48F0E /* EmptyShoppingHeadView.m */,
 				88B72D4E21460E90000AA461 /* UITextView */,
 			);
 			path = Tool;
@@ -1183,6 +1208,7 @@
 				8873D6352154870F00C48F0E /* MineServiceApi.m in Sources */,
 				88B72D7521467687000AA461 /* AccountRulesController.m in Sources */,
 				88345399213FE9B4002AAC62 /* UIImage+RoundedCorner.m in Sources */,
+				8873D6482154C61E00C48F0E /* EmptyShoppingHeadView.m in Sources */,
 				883453B2213FE9B4002AAC62 /* FilePathManager.m in Sources */,
 				88345394213FE9B4002AAC62 /* UDIDWrapper.m in Sources */,
 				8834539C213FE9B4002AAC62 /* UIView+CTExtensions.m in Sources */,
@@ -1226,11 +1252,13 @@
 				883453AA213FE9B4002AAC62 /* UserCacheBean.m in Sources */,
 				8864678E2142655B00418223 /* ZSScrollButton.m in Sources */,
 				8834539A213FE9B4002AAC62 /* UIImage+RTStyle.m in Sources */,
+				8873D6422154BC0900C48F0E /* RechargeRuleModel.m in Sources */,
 				8863966021510EF000E7B79D /* NSData+Ext.m in Sources */,
 				883453A1213FE9B4002AAC62 /* NSArray+TYAFNetworking.m in Sources */,
 				8863965321510E8B00E7B79D /* DPSwizzledMethod.m in Sources */,
 				883453B5213FE9B4002AAC62 /* NSString+MoneyStyle.m in Sources */,
 				884E4F0E21412C9B007448CF /* SettingController.m in Sources */,
+				8873D64B2154E82D00C48F0E /* IntegralRecord.m in Sources */,
 				8834539F213FE9B4002AAC62 /* UIViewController+Loading.m in Sources */,
 				883453AF213FE9B4002AAC62 /* ZSURLResponse.m in Sources */,
 				8863966321510EF000E7B79D /* NSString+Path.m in Sources */,
@@ -1239,6 +1267,7 @@
 				88B72D6A21463CED000AA461 /* UnlockView.m in Sources */,
 				8864679421426FBB00418223 /* SYBoxTextField.m in Sources */,
 				883453B0213FE9B4002AAC62 /* DeviceModel.m in Sources */,
+				8873D6452154C22300C48F0E /* MineMessageListRes.m in Sources */,
 				8873D63F2154924000C48F0E /* BaseModelReq.m in Sources */,
 				8873D63C215488DD00C48F0E /* MineInformationReq.m in Sources */,
 				883452F2213FCBE1002AAC62 /* AppDelegate.m in Sources */,
@@ -1265,6 +1294,7 @@
 				884E4EF021411245007448CF /* MineWalletViewController.m in Sources */,
 				883453B1213FE9B4002AAC62 /* DSBaseModel.m in Sources */,
 				884E4F1121412F38007448CF /* MineTripController.m in Sources */,
+				8873D6512154FBB200C48F0E /* CyclingReq.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

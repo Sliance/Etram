@@ -17,7 +17,7 @@
         [_headbtn.layer setMasksToBounds:YES];
         [_headbtn.layer setCornerRadius:35];
         [_headbtn addTarget:self action:@selector(pressBtn:) forControlEvents:UIControlEventTouchUpInside];
-        [_headbtn setBackgroundImage:[UIImage imageNamed:@"head_mine"] forState:UIControlStateNormal];
+        [_headbtn setBackgroundImage:[UIImage imageNamed:@""] forState:UIControlStateNormal];
     }
     return _headbtn;
 }
@@ -86,7 +86,7 @@
     if (result.memberAvatarPath.length>0) {
         [self.headbtn setBackgroundImageWithURL:[NSURL URLWithString:result.memberAvatarPath] forState:UIControlStateNormal options:YYWebImageOptionAllowBackgroundTask];
     }else{
-         [_headbtn setBackgroundImage:[UIImage imageNamed:@"mine_avater_70"] forState:UIControlStateNormal];
+         [_headbtn setBackgroundImage:[UIImage imageNamed:@"icon_moren"] forState:UIControlStateNormal];
     }
     [image sd_setImageWithURL:[NSURL URLWithString:result.memberAvatarPath]];
     

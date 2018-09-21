@@ -68,7 +68,7 @@
         _headImage = [[UIImageView alloc]init];
         [_headImage.layer setMasksToBounds:YES];
         [_headImage.layer setCornerRadius:30];
-        [_headImage setImage:[UIImage imageNamed:@"head_mine"]];
+        [_headImage setImage:[UIImage imageNamed:@""]];
     }
     return _headImage;
 }
@@ -76,7 +76,7 @@
 -(void)setResult:(MineInformationReq *)result{
     _result = result;
     
-    [_headImage sd_setImageWithURL:[NSURL URLWithString:result.memberAvatarPath]placeholderImage:[UIImage imageNamed:@"mine_avater_55"]];
+    [_headImage sd_setImageWithURL:[NSURL URLWithString:result.memberAvatarPath]placeholderImage:[UIImage imageNamed:@"icon_moren"]];
     self.detailLabel.text = [NSString stringWithFormat:@"积分 %@",result.score];
      _titleLabel.text = result.memberName;
 }

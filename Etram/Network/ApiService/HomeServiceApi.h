@@ -8,6 +8,7 @@
 
 #import "BaseApi.h"
 #import "LoginReq.h"
+#import "CyclingReq.h"
 
 @interface HomeServiceApi : BaseApi
 + (instancetype)share;
@@ -17,6 +18,18 @@
 -(void)weChartLoginWithParam:(LoginReq *) req response:(responseModel) responseModel;
 ///注册登录校验
 -(void)requestLoginWithParam:(LoginReq *) req response:(responseModel) responseModel;
+///注册登录校验
+-(void)requestLoginWithParam:(CyclingReq *) req response:(responseModel) responseModel;
+
+
+
+
+
+
+
+
+
+
 
 
 @end

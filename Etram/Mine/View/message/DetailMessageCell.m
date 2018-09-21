@@ -90,7 +90,7 @@
         _titleLabel.textAlignment = NSTextAlignmentLeft;
         _titleLabel.font = [UIFont fontWithName:@"PingFang-SC-Regular" size:15];
         _titleLabel.textColor = DSColorFromHex(0x323232);
-        _titleLabel.text = @"校园双休免费骑";
+        _titleLabel.text = @"";
     }
     return _titleLabel;
 }
@@ -100,7 +100,7 @@
         _contentLabel.textAlignment = NSTextAlignmentLeft;
         _contentLabel.font = [UIFont fontWithName:@"PingFang-SC-Regular" size:12];
         _contentLabel.textColor = DSColorFromHex(0x969696);
-        _contentLabel.text = @"最近您对犁小农的印象如何？参与调研可获得奖励";
+        _contentLabel.text = @"";
         
     }
     return _contentLabel;
@@ -116,5 +116,11 @@
         
     }
     return _bgview;
+}
+-(void)setModel:(MineMessageListRes *)model{
+    _model = model;
+    [_rightImage sd_setImageWithURL:[NSURL URLWithString:model.memberActivityMessageImage]placeholderImage:[UIImage imageNamed:@""]];
+    self.titleLabel.text = model.memberActivityMessageTitle;
+    self.contentLabel.text = model.memberActivityMessageContent;
 }
 @end

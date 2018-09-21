@@ -17,4 +17,10 @@
 @property(nonatomic,strong)NSString *platform;
 ///时间戳
 @property(nonatomic,copy)NSString *timestamp;
+///页数
+@property(nonatomic,assign)NSInteger pageIndex;
+///每页个数
+@property(nonatomic,copy)NSString *pageSize;
+
+
 @end

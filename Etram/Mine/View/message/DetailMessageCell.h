@@ -7,11 +7,13 @@
 //
 
 #import "BaseTableViewCell.h"
-
+#import "MineMessageListRes.h"
 @interface DetailMessageCell : BaseTableViewCell
 @property(nonatomic,strong)UIView *bgview;
 @property(nonatomic,strong)UILabel *topLabel;
 @property(nonatomic,strong)UILabel *titleLabel;
 @property(nonatomic,strong)UILabel *contentLabel;
 @property(nonatomic,strong)UIImageView *rightImage;
+@property(nonatomic,strong)MineMessageListRes *model;
+
 @end

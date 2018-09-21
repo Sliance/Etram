@@ -8,7 +8,7 @@
 
 #import "BaseView.h"
 #import "RechargeBtn.h"
-//#import "RechargeRuleModel.h"
+#import "RechargeRuleModel.h"
 
 @interface RechargeHeadView : BaseView
 @property(nonatomic,strong)NSMutableArray *dataArr;
