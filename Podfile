@@ -12,9 +12,13 @@ pod 'AFNetworking'
   pod 'MJExtension','~>3.0.11'
   pod 'SVProgressHUD'
   pod 'WechatOpenSDK'
+<<<<<<< HEAD
 #  pod 'AMap3DMap-NO-IDFA'
 #  pod 'AMapSearch-NO-IDFA'
 #  pod 'AMapLocation-NO-IDFA'
 
 
+=======
+  
+>>>>>>> parent of 056a7f2... 1
 end
