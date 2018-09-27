@@ -1,10 +1,6 @@
 platform :ios,'9.0'
 target 'Etram' do
 
-
-
-
-
 pod 'AFNetworking'
   pod 'SDWebImage'
   pod "YYKit"
@@ -16,7 +12,6 @@ pod 'AFNetworking'
   pod 'MJExtension','~>3.0.11'
   pod 'SVProgressHUD'
   pod 'WechatOpenSDK'
-
 #  pod 'AMap3DMap-NO-IDFA'
 #  pod 'AMapSearch-NO-IDFA'
 #  pod 'AMapLocation-NO-IDFA'
